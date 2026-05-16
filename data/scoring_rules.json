@@ -1,0 +1,15 @@
+{
+  "weights": {
+    "age_eligible": 40,
+    "goal_match": 25,
+    "condition_favorable": 25,
+    "instant_issue_speed": 20,
+    "living_benefits_match": 15,
+    "coverage_fit": 10,
+    "budget_fit": 10,
+    "condition_risk": -30,
+    "full_uw_penalty_when_instant": -50,
+    "severe_impairment_penalty": -75,
+    "knockout_condition": -100
+  }
+}
