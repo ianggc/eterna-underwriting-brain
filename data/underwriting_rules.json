@@ -1,0 +1,97 @@
+{
+  "global": {
+    "gi_trigger_conditions": [
+      "chf",
+      "dementia",
+      "dialysis_esrd",
+      "active_cancer",
+      "oxygen_use"
+    ]
+  },
+  "product_rules": {
+    "Mutual of Omaha::Living Promise Level": {
+      "decline_conditions": [
+        "chf",
+        "active_cancer",
+        "dementia",
+        "dialysis_esrd",
+        "oxygen_use"
+      ],
+      "graded_instead_conditions": [
+        "stroke",
+        "cancer_history"
+      ],
+      "lookback_years": {
+        "dui": 5,
+        "cancer_history": 2
+      }
+    },
+    "Foresters Financial::PlanRight Level": {
+      "decline_conditions": [
+        "dementia",
+        "dialysis_esrd",
+        "oxygen_use",
+        "active_cancer"
+      ],
+      "graded_instead_conditions": [
+        "stroke",
+        "cancer_history"
+      ],
+      "lookback_years": {
+        "drug_history": 10
+      }
+    },
+    "Corebridge::GIWL": {
+      "preferred_when_conditions": [
+        "chf",
+        "dementia",
+        "dialysis_esrd",
+        "active_cancer",
+        "oxygen_use"
+      ],
+      "logic": "Rank first when severe impairment blocks SI/graded options."
+    },
+    "Ethos::TruStage Guaranteed": {
+      "preferred_when_conditions": [
+        "chf",
+        "dementia",
+        "dialysis_esrd",
+        "active_cancer",
+        "oxygen_use"
+      ],
+      "logic": "GI backstop; de-prioritize when no severe impairment."
+    },
+    "F&G::Pathsetter IUL": {
+      "preferred_when_conditions": [
+        "type_1_diabetes",
+        "type_2_diabetes",
+        "bipolar_disorder",
+        "hepatitis_b",
+        "hepatitis_c",
+        "high_bmi",
+        "copd",
+        "stroke",
+        "chf"
+      ],
+      "logic": "Primary impaired-risk IUL recommendation."
+    },
+    "InstaBrain::Instant Term w/Living Benefits": {
+      "decline_conditions": [
+        "dui",
+        "marijuana_cannabis",
+        "vaping_nicotine",
+        "chf",
+        "copd",
+        "kidney_disease",
+        "active_cancer",
+        "stroke"
+      ],
+      "lookback_years": {
+        "dui": "DATA_GAP"
+      }
+    }
+  },
+  "notes": [
+    "Use DATA_GAP where exact carrier thresholds are unconfirmed and require portal verification."
+  ]
+}
