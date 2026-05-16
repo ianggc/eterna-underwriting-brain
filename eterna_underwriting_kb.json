@@ -1,0 +1,963 @@
+{
+  "meta": {
+    "organization": "Eterna Insurance Solutions",
+    "version": "1.0",
+    "created": "2026-05-16",
+    "purpose": "AI Underwriting Intelligence Layer — Carrier Knowledge Base",
+    "carriers": ["Mutual of Omaha", "Ethos", "CoreBridge (AIG)", "InstaBrain", "National Life Group", "Transamerica", "American Amicable", "Foresters Financial", "F&G"],
+    "note": "Compiled from Eterna Google Drive documents, carrier guides, field underwriting references, and internal training material. Flag for annual refresh."
+  },
+
+  "carriers": {
+
+    "mutual_of_omaha": {
+      "carrier_id": "MOO",
+      "full_name": "Mutual of Omaha Insurance Company",
+      "underwriting_style": "CONSERVATIVE_TO_MODERATE",
+      "preferred_client_profile": "Ages 45-85, final expense focus, conservative buyers, estate planning",
+      "contact": {
+        "underwriting": "(800) 775-7896",
+        "new_business": "(800) 775-7894",
+        "email_quickquote": "ainqq@mutualofomaha.com",
+        "email_trials": "aintrials@mutualofomaha.com"
+      },
+      "products": {
+        "living_promise_level": {
+          "product_type": "Simplified Issue Whole Life (Final Expense)",
+          "issue_ages": "45-85",
+          "coverage_range": "$2,000-$40,000",
+          "underwriting_class": "Simplified Issue / No Exam",
+          "instant_issue": true,
+          "living_benefits": true,
+          "tobacco_rates": true,
+          "best_for": ["final expense", "seniors", "moderate health issues", "COPD (no oxygen)", "controlled diabetes"]
+        },
+        "living_promise_graded": {
+          "product_type": "Graded Benefit Whole Life (Final Expense)",
+          "issue_ages": "45-85",
+          "coverage_range": "$2,000-$25,000",
+          "underwriting_class": "Graded / Modified Benefit",
+          "instant_issue": true,
+          "living_benefits": false,
+          "best_for": ["higher risk clients", "recent cancer history (<2 yrs remission)", "renal disease"]
+        },
+        "iule": {
+          "product_type": "Indexed Universal Life",
+          "issue_ages": "18-75",
+          "coverage_range": "$25,000-$350,000",
+          "underwriting_class": "Full Underwriting / Accelerated",
+          "instant_issue": false,
+          "living_benefits": true,
+          "best_for": ["healthy middle-age clients", "cash value growth", "retirement supplement"]
+        },
+        "childrens_whole_life": {
+          "product_type": "Whole Life - Juvenile",
+          "issue_ages": "0-17",
+          "coverage_range": "$5,000-$50,000"
+        }
+      },
+      "underwriting_tendencies": {
+        "diabetes_type2": "FAVORABLE — Standard possible with controlled A1C, on oral meds (Metformin). Insulin-dependent: Level possible if no complications.",
+        "diabetes_type1": "MODERATE — Decline for IUL, Level FE possible if no complications",
+        "COPD": "FAVORABLE for FE Level — No oxygen use, no recent hospitalizations required",
+        "CHF": "DECLINE for SIWL — Push to graded or Corebridge GIWL",
+        "cancer_2yr_remission": "FAVORABLE — All 3 FE carriers can issue at level",
+        "cancer_active": "DECLINE — Push to Corebridge GIWL",
+        "stroke_3yr_no_deficit": "FAVORABLE — Level coverage possible",
+        "stroke_recent": "GRADED — Foresters or MOO graded, <2yr",
+        "obesity_BMI": "Moderate acceptance up to BMI ~40 for FE; rated above",
+        "tobacco": "Available — tobacco rates apply",
+        "DUI": "Lookback 5 years — recent DUI may decline or rate",
+        "felony": "Case-by-case; felony within 5 years typically declines",
+        "hypertension_controlled": "FAVORABLE — Standard rate",
+        "hyperlipidemia_statin": "FAVORABLE — Standard rate",
+        "OSA_treated": "FAVORABLE",
+        "dementia": "DECLINE for SIWL — Corebridge GIWL only option"
+      },
+      "knockout_conditions": [
+        "Active cancer treatment",
+        "Congestive Heart Failure (for SIWL Level)",
+        "Dementia / Alzheimer's (for SIWL)",
+        "Dialysis / ESRD",
+        "Oxygen use (for Level FE)",
+        "Felony within 5 years (case-by-case)",
+        "Currently institutionalized"
+      ],
+      "instant_issue_eligible": true,
+      "simplified_issue_eligible": true,
+      "full_uw_trigger": "IUL product; face amounts above FE range",
+      "lookback_periods": {
+        "DUI": "5 years",
+        "felony": "5-10 years",
+        "cancer": "2 years for level; >2 years preferred",
+        "heart_attack": "3 years (FE level)",
+        "stroke": "3 years (FE level)"
+      },
+      "strengths": ["Final expense market", "Conservative senior clients", "COPD (no oxygen)", "Controlled diabetes", "Instant FE approvals"],
+      "weaknesses": ["CHF", "Dementia", "Active treatment cancers", "High BMI IUL"],
+      "living_benefits": {
+        "available": true,
+        "types": ["Chronic illness", "Terminal illness"],
+        "on_term": false,
+        "on_iul": true,
+        "on_fe_whole_life": true
+      },
+      "iul_suitability": "MODERATE — Good for healthy clients 18-75; not the go-to for impaired risks",
+      "fe_suitability": "EXCELLENT",
+      "term_suitability": "GOOD",
+      "best_case_fits": [
+        "Senior 65+ wanting final expense with COPD managed without oxygen",
+        "Controlled T2 diabetic 50-75 wanting FE coverage",
+        "Conservative buyer wanting guaranteed WL legacy plan",
+        "Stroke survivor 3+ years out with no deficits"
+      ]
+    },
+
+    "ethos": {
+      "carrier_id": "ETHOS",
+      "full_name": "Ethos Life (TruStage platform)",
+      "underwriting_style": "TECH-FORWARD / INSTANT ISSUE",
+      "preferred_client_profile": "Ages 20-85, digitally friendly, simplified/instant issue focus",
+      "products": {
+        "trustage_advantage": {
+          "product_type": "Simplified Issue Whole Life",
+          "issue_ages": "20-70 ($5K-$100K); 71-75 ($5K-$50K); 76-85 ($5K-$25K)",
+          "underwriting_class": "Simplified Issue / Instant Decision",
+          "instant_issue": true,
+          "living_benefits": true,
+          "best_for": ["fast approvals", "moderate health", "final expense and above"]
+        },
+        "trustage_guaranteed": {
+          "product_type": "Guaranteed Issue Whole Life",
+          "issue_ages": "40-85",
+          "coverage_range": "$2,000-$25,000",
+          "underwriting_class": "Guaranteed Issue",
+          "instant_issue": true,
+          "first_two_years": "ROP + 10% (modified benefit)",
+          "best_for": ["highest risk clients", "declined elsewhere", "no health questions"]
+        },
+        "ethos_iul": {
+          "product_type": "Indexed Universal Life",
+          "issue_ages": "20-50 ($25K-$1M); 51-60 ($25K-$500K); 61-65 ($25K-$350K)",
+          "underwriting_class": "Accelerated / Full UW",
+          "instant_issue": "Possible on accelerated track",
+          "living_benefits": true,
+          "best_for": ["healthy adults 20-65", "cash value growth", "retirement supplement"]
+        }
+      },
+      "underwriting_tendencies": {
+        "diabetes_type2": "MODERATE — Controlled, oral meds favorable",
+        "tobacco": "Tobacco rates apply; cannabis users may qualify as non-tobacco depending on frequency",
+        "DUI": "Recent DUI may decline; 5+ year lookback preferred",
+        "instant_issue_speed": "EXCELLENT — Same-day decisions common",
+        "marijuana": "May treat casual users as non-tobacco (verify current guidelines)"
+      },
+      "knockout_conditions": [
+        "Active cancer treatment (for Advantage)",
+        "Recent organ transplant",
+        "HIV positive (for non-GI products)",
+        "Currently hospitalized or institutionalized"
+      ],
+      "instant_issue_eligible": true,
+      "simplified_issue_eligible": true,
+      "strengths": ["Fastest instant approvals in market", "Wide age range", "Technology-driven process", "GI option available", "Agent-friendly portal"],
+      "weaknesses": ["Lower face amounts on GI", "GI has 2-year modified benefit", "Not strongest for complex impaired risk"],
+      "living_benefits": {
+        "available": true,
+        "types": ["Critical illness", "Chronic illness", "Terminal illness"],
+        "on_iul": true,
+        "on_whole_life": true
+      },
+      "iul_suitability": "GOOD",
+      "fe_suitability": "EXCELLENT",
+      "term_suitability": "GOOD",
+      "best_case_fits": [
+        "Client who needs fastest possible approval",
+        "Declined elsewhere — GI product backup",
+        "Younger healthy client wanting IUL with instant decision",
+        "Agent needs same-day issued policy"
+      ]
+    },
+
+    "corebridge": {
+      "carrier_id": "CB",
+      "full_name": "Corebridge Financial (formerly AIG Life & Retirement)",
+      "underwriting_style": "MODERATE — Strong AU program, GI backstop for FE",
+      "preferred_client_profile": "Ages 18-80, IUL accum focus + FE market",
+      "contact": {
+        "main": "(877) 686-7954",
+        "advanced_sales": "(855) 323-6923",
+        "email": "aig_ain@aglife.com"
+      },
+      "products": {
+        "agile_uw_plus": {
+          "product_type": "Accelerated Underwriting Program (IUL/Term)",
+          "issue_ages": "18-60 (some products to 65)",
+          "max_face_au": "$2,000,000 (total inforce + applied)",
+          "underwriting_class": "Accelerated / No Exam",
+          "instant_issue": "Possible — 24-72 hour decisions",
+          "best_for": ["Ages 18-60 with manageable health", "IUL accumulation", "Large face amounts"]
+        },
+        "simplinow_legacy_siwl": {
+          "product_type": "Simplified Issue Whole Life (Final Expense)",
+          "issue_ages": "50-80",
+          "coverage_range": "$5,000-$35,000",
+          "underwriting_class": "Simplified Issue",
+          "instant_issue": true,
+          "living_benefits": false,
+          "best_for": ["FE seniors", "moderate health issues"]
+        },
+        "giwl": {
+          "product_type": "Guaranteed Issue Whole Life (Final Expense)",
+          "issue_ages": "50-80",
+          "coverage_range": "$5,000-$25,000",
+          "underwriting_class": "Guaranteed Issue — No health questions",
+          "instant_issue": true,
+          "living_benefits": false,
+          "best_for": ["CHF history", "Active cancer treatment", "Dementia", "Dialysis", "Any condition that declines elsewhere"],
+          "note": "MOST IMPORTANT backstop product for declined/uninsurable FE clients"
+        },
+        "qol_max_accumulator_iul": {
+          "product_type": "Indexed Universal Life",
+          "underwriting_class": "Accelerated UW / Full UW",
+          "best_for": ["IUL accumulation focus", "Max funded IUL strategy"],
+          "note": "Industry-known as top IUL accumulation product"
+        }
+      },
+      "underwriting_tendencies": {
+        "diabetes_type2": "FAVORABLE for AU (ages 51-60) — Standard possible",
+        "diabetes_type1": "DECLINE for accelerated — F&G or MOO for FE",
+        "COPD": "DECLINE for SIWL — GIWL is only option",
+        "CHF": "DECLINE SIWL — GIWL is BEST OPTION in market for CHF FE clients",
+        "cancer_active": "GIWL only option — no health questions bypasses this",
+        "dementia": "GIWL only option",
+        "renal_dialysis": "GIWL only option",
+        "recent_weight_loss": "GIWL — bypasses weight loss red flag",
+        "anxiety": "FAVORABLE AU ages 18-60",
+        "depression": "FAVORABLE AU ages 18-60",
+        "asthma": "FAVORABLE AU all age groups",
+        "OSA_treated": "FAVORABLE AU all age groups",
+        "hypertension_controlled": "FAVORABLE AU all age groups",
+        "hyperlipidemia": "FAVORABLE AU all age groups",
+        "stroke_18_40": "DECLINE on accelerated — push to F&G",
+        "heart_disease_18_40": "DECLINE — very likely decline all accelerated carriers"
+      },
+      "knockout_conditions": [
+        "Active cancer treatment (SIWL — GIWL available)",
+        "CHF (SIWL — GIWL available)",
+        "Dementia/Alzheimer's (SIWL — GIWL available)",
+        "Dialysis (SIWL — GIWL available)",
+        "Stroke in ages 18-40 (accelerated)"
+      ],
+      "instant_issue_eligible": true,
+      "simplified_issue_eligible": true,
+      "full_uw_trigger": "Face amount > $2M; age > 65; complex health history",
+      "giwl_key_insight": "GIWL is the strongest guaranteed issue product in the Eterna lineup — go-to for CHF, active cancer, dementia, and dialysis FE clients",
+      "strengths": ["GIWL backstop for declined clients", "Strong IUL accumulation (QoL Max Accumulator+)", "AU program up to $2M", "CHF clients — best in market via GIWL", "Dementia/memory loss — GIWL"],
+      "weaknesses": ["More conservative on impaired risk for SIWL vs F&G", "SIWL age range limited to 50-80"],
+      "living_benefits": {
+        "available": true,
+        "on_iul": true,
+        "on_siwl": false,
+        "on_giwl": false
+      },
+      "iul_suitability": "EXCELLENT — QoL Max Accumulator+ is market leader for IUL accumulation",
+      "fe_suitability": "EXCELLENT — Especially GIWL for highest-risk clients",
+      "term_suitability": "GOOD",
+      "max_funded_iul_suitability": "EXCELLENT",
+      "best_case_fits": [
+        "CHF history wanting final expense — GIWL is only real option",
+        "Active cancer treatment wanting FE — GIWL",
+        "Healthy 35-55 wanting max-funded IUL — QoL Max Accumulator+",
+        "Dementia or memory issues — GIWL",
+        "Agent needs GI backstop when all SIWL options decline"
+      ]
+    },
+
+    "instabrain": {
+      "carrier_id": "IB",
+      "full_name": "InstaBrain",
+      "underwriting_style": "INSTANT ISSUE / TECH PLATFORM",
+      "preferred_client_profile": "Fastest possible issue pathway, digitally native",
+      "note": "InstaBrain operates as an instant-decision underwriting engine/platform. Verify current carrier partnerships and product availability through Eterna contracting. Guidelines below are directional based on platform positioning.",
+      "products": {
+        "instant_decision_products": {
+          "product_type": "Instant Issue Life Insurance",
+          "underwriting_class": "Algorithm-based instant decision",
+          "instant_issue": true,
+          "best_for": ["Fastest time to issued policy", "Healthy to moderately healthy clients", "Digital-first workflow"]
+        }
+      },
+      "underwriting_tendencies": {
+        "general": "Algorithmic underwriting — health history, RX database, driving record checked at point of sale",
+        "instant_approval_speed": "FASTEST in lineup — real-time decisions",
+        "tobacco": "Tobacco rates apply",
+        "DUI": "Recent DUI likely decline on instant track"
+      },
+      "strengths": ["Fastest issue pathway in the market", "Clean digital workflow", "Real-time decisions"],
+      "weaknesses": ["Limited impaired risk tolerance", "Lower face amounts typically", "Not for complex cases"],
+      "instant_issue_eligible": true,
+      "simplified_issue_eligible": true,
+      "best_case_fits": [
+        "Healthy client who needs fastest possible coverage",
+        "Agent wants same-call issued policy",
+        "Client with clean health, driving, and background profile"
+      ],
+      "data_gap_flag": "VERIFY current product lineup, issue ages, and coverage amounts directly with InstaBrain — guidelines may have changed. Pull from Eterna contracting portal."
+    },
+
+    "national_life_group": {
+      "carrier_id": "NLG",
+      "full_name": "National Life Group",
+      "underwriting_style": "ACCUMULATION-FOCUSED / MODERATE",
+      "preferred_client_profile": "IUL accumulation, wealth transfer, cash-value-focused clients",
+      "contact": {
+        "phone": "(800) 906-3310",
+        "portal": "nationallife.com/agent"
+      },
+      "products": {
+        "flexlife_iul": {
+          "product_type": "Indexed Universal Life",
+          "issue_ages": "0-85 (NY: FlexLife NL)",
+          "coverage_range": "$50,000-$2,000,000+ (home office approval >$2M)",
+          "underwriting_class": "Accelerated / Full UW",
+          "instant_issue": false,
+          "living_benefits": true,
+          "best_for": ["Large face IUL", "Cash value accumulation", "Wealth transfer", "Max funded IUL strategy"],
+          "structuring_note": "Use MEC avoidance (Yes-Adjust Face), Minimum DB/Max CV or Balanced structure. Pay to A65 for retirement focus."
+        }
+      },
+      "underwriting_tendencies": {
+        "diabetes_type2": "FAVORABLE — Standard possible for ages 51-60",
+        "anxiety": "FAVORABLE — Ages 18-60",
+        "depression": "FAVORABLE — Ages 18-60",
+        "asthma": "FAVORABLE — Ages 18-60",
+        "OSA_treated": "FAVORABLE — All age groups",
+        "hypertension_controlled": "FAVORABLE — All age groups",
+        "hyperlipidemia": "FAVORABLE — All age groups",
+        "obesity_meds": "FAVORABLE — NA accepts obesity meds",
+        "bariatric_surgery": "FAVORABLE — NA (Surgery 5+ years ago)",
+        "stroke_18_40": "DECLINE on accelerated",
+        "heart_disease_18_40": "DECLINE — Very likely across all accelerated",
+        "epilepsy": "Grand Mal and Petit Mal only — possible"
+      },
+      "knockout_conditions": [
+        "Stroke within 2 years (accelerated)",
+        "Active major heart disease (younger clients)",
+        "Current cancer treatment (IUL)",
+        "Uncontrolled mental health conditions"
+      ],
+      "instant_issue_eligible": false,
+      "simplified_issue_eligible": false,
+      "full_uw_trigger": "Standard — full underwriting on IUL",
+      "writeaway_au_program": {
+        "name": "WriteAway",
+        "eligible_ages": "18-60",
+        "max_face": "$2,000,000"
+      },
+      "strengths": ["Max-funded IUL", "Wealth transfer / large face amounts", "Accumulation-focused design", "Wide age range 0-85", "WriteAway AU program up to $2M"],
+      "weaknesses": ["No final expense product in lineup", "Not fastest issuer", "Requires full or AU underwriting"],
+      "living_benefits": {
+        "available": true,
+        "types": ["Chronic illness", "Critical illness", "Terminal illness"],
+        "on_iul": true
+      },
+      "iul_suitability": "EXCELLENT — Top choice for max-funded IUL strategies",
+      "fe_suitability": "NOT APPLICABLE",
+      "term_suitability": "MODERATE",
+      "max_funded_iul_suitability": "EXCELLENT",
+      "best_case_fits": [
+        "High-premium IUL client wanting max cash accumulation",
+        "Wealth transfer focus with large death benefit needs",
+        "Client 0-85 wanting permanent IUL coverage",
+        "Business owner or high-income earner wanting tax-free retirement vehicle"
+      ]
+    },
+
+    "transamerica": {
+      "carrier_id": "TA",
+      "full_name": "Transamerica Life Insurance Company",
+      "underwriting_style": "BRAND-RECOGNITION / MODERATE-CONSERVATIVE",
+      "preferred_client_profile": "Brand-loyal clients, simplified policy designs, FE and term",
+      "contact": {
+        "new_business": "(800) 451-7586",
+        "sales": "(866) 545-9058",
+        "portal": "tatransact.com"
+      },
+      "products": {
+        "final_expense_whole_life": {
+          "product_type": "Simplified Issue Whole Life (Final Expense)",
+          "underwriting_class": "Simplified Issue",
+          "instant_issue": true,
+          "living_benefits": "Primarily Terminal",
+          "best_for": ["Brand-loyal FE clients", "Simplified underwriting"]
+        },
+        "term_life": {
+          "product_type": "Term Life Insurance",
+          "underwriting_class": "Accelerated / Full UW",
+          "best_for": ["Income replacement", "Mortgage protection", "Younger clients"]
+        },
+        "iul_products": {
+          "product_type": "Indexed Universal Life",
+          "underwriting_class": "Full UW / Accelerated",
+          "best_for": ["Balanced cash value and protection"]
+        }
+      },
+      "underwriting_tendencies": {
+        "general": "Moderate conservative — brand recognition is primary differentiator",
+        "diabetes_type2": "Manageable with controlled A1C",
+        "tobacco": "Tobacco rates apply",
+        "DUI": "5-year lookback",
+        "living_benefits": "Primarily terminal illness on WL; fuller suite on IUL"
+      },
+      "knockout_conditions": [
+        "Active cancer treatment",
+        "Recent major cardiac events",
+        "Uncontrolled chronic conditions"
+      ],
+      "instant_issue_eligible": true,
+      "simplified_issue_eligible": true,
+      "strengths": ["Brand recognition", "Consumer trust", "Simplified FE designs", "Foreign national options (with international review)"],
+      "weaknesses": ["Living benefits limited to terminal on WL", "Not top choice for impaired risk vs F&G", "Not strongest IUL accumulation vs NLG or CB"],
+      "living_benefits": {
+        "available": true,
+        "types": ["Terminal illness primarily on WL", "Fuller suite on IUL"],
+        "on_term": "Varies by product",
+        "on_iul": true,
+        "on_whole_life": "Terminal only typically"
+      },
+      "iul_suitability": "MODERATE",
+      "fe_suitability": "GOOD",
+      "term_suitability": "GOOD",
+      "best_case_fits": [
+        "Client who specifically recognizes and trusts the Transamerica brand",
+        "FE client wanting simple, clean policy design",
+        "Foreign national requiring life insurance (international review team)"
+      ]
+    },
+
+    "american_amicable": {
+      "carrier_id": "AMAM",
+      "full_name": "American Amicable Group",
+      "underwriting_style": "SIMPLIFIED ISSUE / FE FOCUSED",
+      "preferred_client_profile": "Ages 0-85 final expense and moderate coverage",
+      "contact": {
+        "phone": "(800) 736-7311",
+        "portal": "americanamicable.com/marketing"
+      },
+      "products": {
+        "family_choice": {
+          "product_type": "Whole Life",
+          "issue_ages": "0-49",
+          "coverage_range": "Max $30,000",
+          "underwriting_class": "Simplified Issue",
+          "instant_issue": true,
+          "bank_requirement": "All banks accepted"
+        },
+        "senior_choice": {
+          "product_type": "Whole Life (Senior/FE)",
+          "issue_ages": "50-85",
+          "coverage_range": "Max $50,000",
+          "underwriting_class": "Simplified Issue",
+          "instant_issue": true,
+          "bank_requirement": "All banks accepted"
+        }
+      },
+      "underwriting_tendencies": {
+        "general": "Simplified issue — health questions on app, no exam",
+        "tobacco": "Tobacco rates apply",
+        "older_clients": "FAVORABLE — Senior Choice up to age 85"
+      },
+      "knockout_conditions": [
+        "Active cancer treatment",
+        "Severe cardiac conditions",
+        "Conditions requiring GI product"
+      ],
+      "instant_issue_eligible": true,
+      "simplified_issue_eligible": true,
+      "strengths": ["Coverage up to age 85", "Senior market ($50K max)", "All banks accepted", "Simple application process"],
+      "weaknesses": ["Lower coverage ceiling ($50K Senior Choice)", "Not for IUL strategies"],
+      "living_benefits": {
+        "available": "Verify current riders",
+        "note": "Confirm living benefit rider availability with current product guides"
+      },
+      "fe_suitability": "GOOD",
+      "iul_suitability": "NOT AVAILABLE",
+      "term_suitability": "LIMITED",
+      "best_case_fits": [
+        "Senior 50-85 wanting FE coverage up to $50K",
+        "Client needing all-bank-accepted simplified issue policy",
+        "Family with younger members wanting Family Choice product"
+      ]
+    },
+
+    "foresters_financial": {
+      "carrier_id": "FF",
+      "full_name": "The Independent Order of Foresters (Foresters Financial)",
+      "underwriting_style": "MODERATE — Member benefits add unique value proposition",
+      "preferred_client_profile": "Protection + living access, community-oriented clients, FE and WL",
+      "contact": {
+        "new_business": "(866) 466-7166, Opt 2",
+        "email": "nbunewbiz@foresters.com",
+        "portal": "myezbiz.foresters.com"
+      },
+      "products": {
+        "planright_siwl": {
+          "product_type": "Simplified Issue Whole Life (Final Expense)",
+          "issue_ages": "50-85",
+          "coverage_range": "$2,000-$35,000 (varies by state)",
+          "underwriting_class": "Simplified Issue / No Exam",
+          "instant_issue": true,
+          "living_benefits": true,
+          "member_benefits": true,
+          "best_for": ["FE seniors", "Clients valuing member community benefits", "Chronic/critical/terminal illness riders"]
+        },
+        "live_well_plus_whole_life": {
+          "product_type": "Participating Whole Life",
+          "issue_ages": "18-60",
+          "paid_up_age": 100,
+          "maturity_age": 121,
+          "dividend_potential": true,
+          "living_benefits": true,
+          "best_for": ["Protection + living benefits access", "Charitable legacy", "Long-term stability"]
+        }
+      },
+      "underwriting_tendencies": {
+        "cannabis_marijuana": "FAVORABLE — Treats casual marijuana users as NON-TOBACCO (key competitive advantage)",
+        "diabetes_type2": "FAVORABLE — Manageable health accepted on FE",
+        "cancer_2yr_remission": "FAVORABLE — Level FE possible",
+        "cancer_less_2yr": "GRADED — Foresters graded available",
+        "cancer_active": "DECLINE — Corebridge GIWL needed",
+        "stroke_3yr_no_deficit": "FAVORABLE — Level FE",
+        "stroke_less_2yr": "GRADED — Foresters graded available",
+        "COPD": "Check FE guidelines — graded pathway likely",
+        "renal_disease_no_dialysis": "GRADED — Foresters FE graded option",
+        "tobacco": "Tobacco rates; cannabis may qualify non-tobacco",
+        "drug_history": "10-year lookback questionnaire; extensive substance use history reviewed",
+        "DUI": "5-10 year lookback",
+        "member_benefits": "Unique fraternal member benefits — grants, scholarships, community events (competitive differentiator)"
+      },
+      "knockout_conditions": [
+        "Active cancer treatment (for Level — push to Graded)",
+        "Dialysis (push to Corebridge GIWL)",
+        "Dementia/Alzheimer's (push to Corebridge GIWL)"
+      ],
+      "instant_issue_eligible": true,
+      "simplified_issue_eligible": true,
+      "drug_questionnaire": "10-year lookback for drug/substance use — alcohol, amphetamines, cocaine, opiates, marijuana (full questionnaire required)",
+      "strengths": [
+        "Cannabis/marijuana users treated as NON-TOBACCO",
+        "Strong living benefits (Chronic + Critical + Terminal)",
+        "Member benefits (grants, scholarships) — unique differentiator",
+        "Child riders available",
+        "Graded pathway for higher-risk FE clients"
+      ],
+      "weaknesses": ["10-year drug history lookback", "Not strongest for IUL", "Limited FE coverage ($35K max)"],
+      "living_benefits": {
+        "available": true,
+        "types": ["Chronic illness", "Critical illness", "Terminal illness"],
+        "on_whole_life": true,
+        "on_fe": true,
+        "note": "Strongest living benefits package in FE market"
+      },
+      "fe_suitability": "EXCELLENT — Especially for cannabis users and clients wanting living benefits on FE",
+      "iul_suitability": "LIMITED",
+      "term_suitability": "MODERATE — Strong Living Benefits on term",
+      "best_case_fits": [
+        "Cannabis/marijuana user who would get tobacco rates elsewhere",
+        "FE client wanting full living benefits (chronic + critical + terminal)",
+        "Community/fraternal-values-oriented client wanting member benefits",
+        "Cancer history 2+ years in remission wanting FE",
+        "Stroke survivor 3+ years out wanting FE"
+      ]
+    },
+
+    "fg_life": {
+      "carrier_id": "FG",
+      "full_name": "Fidelity & Guaranty Life Insurance Company (F&G)",
+      "underwriting_style": "AGGRESSIVE / MOST IMPAIRED RISK FRIENDLY",
+      "preferred_client_profile": "Ages 0-80, IUL accumulation, impaired risk cases",
+      "contact": {
+        "underwriting": "(800) 445-6758, Opt 2 Opt 1",
+        "new_business": "(800) 445-6758",
+        "risk_assessment": "riskassessment@fglife.com",
+        "sales": "(800) 357-8734",
+        "email_life": "Life.Sales@fglife.com"
+      },
+      "products": {
+        "pathsetter_iul": {
+          "product_type": "Indexed Universal Life",
+          "issue_ages": "0-80",
+          "coverage_range": "$50,000-$1,000,000 (home office approval >$1M)",
+          "underwriting_class": "InstApproval® / Accelerated / Full UW",
+          "instant_issue": "InstApproval® — instant decisions available",
+          "living_benefits": true,
+          "best_for": ["Cash value accumulation focus", "Most impaired risk IUL cases", "Ages 51-60 with health issues"],
+          "structuring_note": "Max Accumulation: Specified Premiums, MEC avoidance, 50% Blackrock / 50% Morgan Stanley 110% PAR allocation recommended"
+        },
+        "execudex_iul": {
+          "product_type": "Indexed Universal Life (Instant Decision)",
+          "issue_ages": "18-60",
+          "coverage_range": "$150,000-$1,000,000",
+          "underwriting_class": "Instant Decision IUL",
+          "instant_issue": true,
+          "bank_requirement": "Physical bank",
+          "best_for": ["Very healthy clients 18-60 wanting instant IUL decision", "Highest-health IUL placement"]
+        },
+        "everlast_iul": {
+          "product_type": "IUL Protection-Focused",
+          "underwriting_class": "Accelerated / Full UW",
+          "best_for": ["Protection-focused clients wanting mainly death benefit via IUL structure"]
+        },
+        "instaapproval_free": {
+          "program_name": "InstApproval® Free / Exam-Free",
+          "eligible_ages": "0-60 (61-65 with additional evidence)",
+          "max_face": "$1,000,000 for ages ≤60"
+        }
+      },
+      "underwriting_tendencies": {
+        "general": "MOST AGGRESSIVE in lineup — accepts widest range of impaired risks for IUL",
+        "diabetes_type1_ages_18_40": "FAVORABLE — onset age 20+, typically rated at best",
+        "diabetes_type1_ages_41_50": "FAVORABLE — onset age 20+, moderately to highly rated",
+        "diabetes_type1_ages_51_60": "FAVORABLE — onset age 20+, highly rated at best",
+        "diabetes_type2_ages_18_40": "FAVORABLE — typically rated at best",
+        "diabetes_type2_ages_41_50": "FAVORABLE — STD to mildly rated",
+        "diabetes_type2_ages_51_60": "FAVORABLE — Standard possible",
+        "COPD": "FAVORABLE — F&G is go-to for COPD IUL cases",
+        "CHF": "FAVORABLE for IUL — mildly rated at best; BEST impaired risk carrier for CHF non-FE",
+        "arrhythmia": "FAVORABLE — typically rated at best",
+        "bipolar_ages_18_40": "FAVORABLE — highly rated at best",
+        "bipolar_ages_41_50": "FAVORABLE — moderately rated",
+        "bipolar_ages_51_60": "FAVORABLE — mildly to moderately rated",
+        "cancer": "FAVORABLE for F&G — FE graded option",
+        "Crohns_UC": "FAVORABLE — rated at best",
+        "depression": "FAVORABLE — all age groups",
+        "anxiety": "FAVORABLE — all age groups",
+        "epilepsy": "FAVORABLE — Grand Mal and Petit Mal (41-60)",
+        "hepatitis_B_C": "FAVORABLE — F&G accepts; other carriers typically decline",
+        "heart_disease_41_50": "FAVORABLE — typically moderately rated",
+        "heart_disease_51_60": "FAVORABLE — typically mildly rated",
+        "MS": "FAVORABLE — rated at best",
+        "obesity_meds": "FAVORABLE — F&G, NA, Symetra accept",
+        "bariatric_surgery": "FAVORABLE — F&G accepts",
+        "OSA_treated": "FAVORABLE — all age groups",
+        "Parkinsons": "FAVORABLE — rated at best",
+        "rheumatoid_arthritis": "FAVORABLE — rated at best",
+        "stroke_ages_41_60": "FAVORABLE — highly rated at best (F&G is go-to for stroke IUL)",
+        "thyroid_non_cancer": "FAVORABLE — all age groups",
+        "BMI_below_37": "FAVORABLE — Pathsetter/IUL",
+        "BMI_37_to_46": "FAVORABLE (rated) — F&G is go-to above BMI 37",
+        "hepatitis": "UNIQUE CAPABILITY — F&G accepts Hep B/C; almost all other carriers decline",
+        "juvenile_asthma_over_2": "FAVORABLE — over age 2",
+        "juvenile_ADHD_over_2": "FAVORABLE — over age 2",
+        "juvenile_diabetes_type1": "POSSIBLE — Table 8 plus $2/k over age 7 (best case)",
+        "DUI": "Lookback 5-10 years",
+        "tobacco": "Tobacco rates apply"
+      },
+      "knockout_conditions": [
+        "Active cancer treatment (FE — push to GIWL or Graded)",
+        "Dialysis (FE — Corebridge GIWL)",
+        "Very high BMI (above 46 typically declines or declines AU)"
+      ],
+      "instant_issue_eligible": true,
+      "simplified_issue_eligible": true,
+      "full_uw_trigger": "Face > $1M; age > 60; complex impaired cases",
+      "instaapproval_program": {
+        "name": "InstApproval® Free",
+        "ages": "0-60 (61-65 with evidence)",
+        "max_face": "$1,000,000"
+      },
+      "strengths": [
+        "MOST AGGRESSIVE impaired risk acceptance — unmatched in lineup",
+        "ONLY carrier for Hepatitis B/C IUL cases",
+        "Best for stroke survivors wanting IUL (highly rated but approvable)",
+        "COPD + IUL — strongest choice",
+        "CHF + IUL — only viable option above GI",
+        "Bipolar disorder acceptance",
+        "High BMI (37-46) — go-to carrier",
+        "Diabetes Type 1 (onset 20+) — acceptance across age groups",
+        "Bariatric surgery accepted",
+        "Juvenile issues from age 2",
+        "InstApproval® for ExecuDex (instant IUL)",
+        "Wide age range 0-80 for IUL"
+      ],
+      "weaknesses": ["Rated premiums on impaired cases (not declined, but not cheapest)", "ExecuDex requires physical bank", "Not best for max-funded accumulation vs NLG"],
+      "living_benefits": {
+        "available": true,
+        "types": ["Chronic illness", "Critical illness", "Terminal illness"],
+        "on_iul": true,
+        "on_everlast": true
+      },
+      "iul_suitability": "EXCELLENT — Especially for impaired risk cases that other carriers decline",
+      "fe_suitability": "GOOD — FE graded option available",
+      "term_suitability": "MODERATE",
+      "max_funded_iul_suitability": "GOOD",
+      "impaired_risk_suitability": "BEST IN LINEUP",
+      "best_case_fits": [
+        "Type 1 or Type 2 diabetic wanting IUL — F&G is primary go-to",
+        "CHF history (non-FE) — F&G IUL vs Corebridge GIWL for FE",
+        "Hepatitis B or C — ONLY carrier in lineup accepting this",
+        "Stroke survivor 41-60 wanting IUL coverage",
+        "Bipolar disorder — F&G only viable IUL option",
+        "COPD + IUL — strongest placement probability",
+        "BMI 37-46 — rated but approvable on F&G vs decline elsewhere",
+        "MS, Parkinson's, Crohn's/UC — F&G rated at best"
+      ]
+    }
+  },
+
+  "carrier_pattern_analysis": {
+    "best_for_diabetics": {
+      "type2_fe_seniors": ["Mutual of Omaha (Level FE)", "Corebridge SIWL", "F&G (graded/rated)"],
+      "type2_iul_18_50": ["F&G Pathsetter (strongest)", "CoreBridge AU", "North American WriteAway"],
+      "type2_iul_51_60": ["F&G (standard possible)", "Corebridge AU (standard possible)"],
+      "type1_iul": ["F&G ONLY (onset age 20+, highly rated)", "All others decline for AU/IUL"],
+      "type1_fe": ["Mutual of Omaha (Level possible, no complications)", "Corebridge GIWL (no questions)"],
+      "key_insight": "F&G is the go-to carrier for any diabetic wanting IUL. For FE, MOO and Corebridge SIWL handle T2. For T1 IUL, F&G is the only real option."
+    },
+    "best_for_CHF": {
+      "fe_clients": ["Corebridge GIWL (ONLY guaranteed issue — no health questions)"],
+      "iul_clients": ["F&G (mildly rated at best for ages 41-60)", "Corebridge GIWL for FE only"],
+      "other_carriers": "MOO, Ethos, Foresters, Transamerica all decline CHF for SIWL Level",
+      "key_insight": "CHF = Corebridge GIWL for FE (no questions). F&G for IUL (rated). No other carrier in lineup handles CHF."
+    },
+    "best_for_recent_DUI": {
+      "general": "5-year lookback is standard; 10-year preferred for preferred rates",
+      "most_tolerant": ["F&G (case-by-case)", "Ethos (simplified issue — less scrutiny)"],
+      "carriers_checking": "All carriers check MVR — DUI within 2-3 years is typically decline or rated",
+      "key_insight": "Recent DUI (within 2 years) = very difficult. Push to simplified issue carriers. 3-5 years out: F&G and Ethos most flexible."
+    },
+    "aggressive_vs_conservative": {
+      "most_aggressive": "F&G — widest impaired risk acceptance",
+      "moderately_aggressive": ["Ethos (instant issue)", "Foresters (cannabis users)", "CoreBridge (GIWL backstop)"],
+      "moderate": ["Mutual of Omaha", "National Life Group", "American Amicable"],
+      "most_conservative": ["Transamerica (for complex cases)"],
+      "key_insight": "F&G first for any impaired risk IUL case. MOO and Corebridge SIWL for manageable-health FE. Corebridge GIWL as last resort FE backstop."
+    },
+    "best_for_instant_issue": {
+      "ranked": ["InstaBrain (fastest)", "Ethos (TruStage platform)", "Corebridge GIWL (guaranteed, no questions)", "Foresters PlanRight", "MOO Living Promise"],
+      "same_day": ["InstaBrain", "Ethos", "Corebridge GIWL"],
+      "key_insight": "For fastest placement: InstaBrain or Ethos first. For impaired risk instant issue: Corebridge GIWL (no questions)."
+    },
+    "best_for_max_funded_iul": {
+      "ranked": ["National Life Group FlexLife", "Corebridge QoL Max Accumulator+", "F&G Pathsetter (impaired risk)"],
+      "key_insight": "NLG for healthy clients wanting maximum accumulation. Corebridge QoL Max Accumulator+ strong competition. F&G Pathsetter if client has health issues."
+    },
+    "easiest_simplified_issue": {
+      "ranked": ["Ethos (TruStage Advantage/Guaranteed)", "Corebridge GIWL (no questions at all)", "MOO Living Promise", "Foresters PlanRight", "American Amicable"],
+      "guaranteed_issue": ["Ethos TruStage Guaranteed", "Corebridge GIWL"],
+      "key_insight": "GI products require zero health info — fastest, easiest placement for highest-risk clients."
+    },
+    "best_for_older_clients": {
+      "age_75_85": ["Mutual of Omaha (up to 85)", "American Amicable Senior Choice (up to 85)", "Ethos TruStage (76-85 up to $25K)", "Corebridge GIWL (50-80)"],
+      "age_65_74": ["Mutual of Omaha", "Foresters", "Corebridge SIWL", "American Amicable"],
+      "key_insight": "MOO and American Amicable have strongest older-age FE coverage. NLG IUL goes to age 85 but requires full underwriting."
+    },
+    "best_for_smokers": {
+      "tobacco_rates": "All carriers offer tobacco pricing",
+      "cannabis_non_tobacco": ["Foresters — treats casual cannabis use as NON-TOBACCO (key advantage)", "Some Ethos products"],
+      "DUI_plus_smoker": "F&G most flexible for combined risk factors",
+      "key_insight": "For cannabis users who would get tobacco-rated: Foresters is the go-to — only carrier treating casual cannabis as non-tobacco in the lineup."
+    },
+    "best_for_hepatitis": {
+      "hepatitis_B_C": ["F&G ONLY — all other carriers in lineup decline"],
+      "key_insight": "Hepatitis B or C = F&G or decline. No other option in Eterna lineup."
+    },
+    "best_for_stroke": {
+      "stroke_3yr_no_deficits_FE": ["Mutual of Omaha (Level)", "Foresters (Level)", "Corebridge SIWL"],
+      "stroke_less_2yr_FE": ["Foresters (Graded)", "MOO (Graded)", "Corebridge GIWL"],
+      "stroke_41_60_IUL": ["F&G (highly rated but approvable)"],
+      "stroke_18_40_IUL": "All accelerated carriers decline — F&G only option and highly rated"
+    },
+    "best_for_COPD": {
+      "FE_no_oxygen": ["Mutual of Omaha Living Promise Level", "Foresters PlanRight"],
+      "FE_with_oxygen": ["Corebridge GIWL (no questions)"],
+      "IUL": ["F&G Pathsetter"],
+      "key_insight": "COPD without oxygen + FE: MOO Level. COPD with oxygen: GIWL only. COPD wanting IUL: F&G only viable option."
+    },
+    "best_for_high_BMI": {
+      "BMI_below_37": "All accelerated carriers acceptable",
+      "BMI_37_to_46": ["F&G (rated at best)", "Others typically decline AU"],
+      "BMI_above_46": "Typically decline — push to simplified issue or GI FE",
+      "key_insight": "BMI 37-46: F&G is the only AU carrier in lineup. Above 46: FE simplified/GI only."
+    }
+  },
+
+  "underwriting_quick_reference": {
+    "common_medications_and_conditions": {
+      "Metformin": {"indicates": "Type 2 Diabetes", "carriers_favorable": ["MOO", "CB", "FG", "NA", "Ethos"]},
+      "Insulin": {"indicates": "T1 or T2 Diabetes", "note": "Insulin-dependent T1 = F&G only for IUL; FE options at MOO, CB SIWL"},
+      "Lisinopril_Losartan_Amlodipine": {"indicates": "Hypertension", "carriers_favorable": "ALL — controlled BP accepted across lineup"},
+      "Atorvastatin_Rosuvastatin_Simvastatin": {"indicates": "High Cholesterol/Hyperlipidemia", "carriers_favorable": "ALL — on statin with good ratios accepted"},
+      "Sertraline_Escitalopram": {"indicates": "Anxiety/Depression", "carriers_favorable": ["CB", "NA", "FG", "Ethos"], "note": "Single medication, stable = favorable"},
+      "Bupropion": {"indicates": "Depression or Smoking Cessation", "note": "Document purpose — smoking cessation version differs from depression"},
+      "Metoprolol_Atenolol": {"indicates": "Cardiac — Arrhythmia or Heart Disease", "note": "Requires full cardiac history; F&G most flexible"},
+      "Levothyroxine": {"indicates": "Hypothyroidism/Hashimoto's", "carriers_favorable": "ALL — thyroid (non-cancer) accepted across lineup"},
+      "Spiriva_Advair_Albuterol": {"indicates": "COPD or Asthma", "note": "Asthma: All AU carriers acceptable; COPD: F&G for IUL, MOO/Foresters for FE"},
+      "Glipizide": {"indicates": "Type 2 Diabetes", "note": "Oral diabetic med — favorable signal for controlled T2 DM"},
+      "Omeprazole_Pantoprazole": {"indicates": "GERD/Acid Reflux", "carriers_favorable": "ALL — benign condition"},
+      "Zolpidem_Trazodone": {"indicates": "Sleep Disorder / Insomnia", "note": "May indicate associated depression or mental health — probe further"},
+      "Celecoxib_Ibuprofen_Rx": {"indicates": "Arthritis / Chronic Pain", "note": "Probe for underlying cause — RA vs osteoarthritis matters"},
+      "Obesity_meds_Wegovy_Ozempic": {"indicates": "Obesity/GLP-1 treatment", "carriers_favorable": ["NA", "Symetra", "FG"], "note": "Emerging acceptance — verify current guidelines"}
+    },
+    "lookback_reference": {
+      "DUI": "5 years (most carriers); 10 years for preferred rates",
+      "felony": "5-10 years (typically decline within 5)",
+      "cancer_level_FE": "2+ years in remission",
+      "cancer_active": "GIWL or Graded only",
+      "heart_attack_FE_level": "3+ years",
+      "stroke_FE_level": "3+ years no deficits",
+      "drug_use": "10 years (Foresters questionnaire); 5-10 years other carriers",
+      "hepatitis_B_C": "F&G considers; all others decline"
+    },
+    "build_bmi_reference": {
+      "BMI_under_30": "Preferred / Standard — all carriers",
+      "BMI_30_to_37": "Standard to Mildly Rated — all AU carriers",
+      "BMI_37_to_42": "Rated — F&G best option; others may decline AU",
+      "BMI_42_to_46": "Highly Rated — F&G Pathsetter; others decline",
+      "BMI_above_46": "Decline AU — simplified issue FE only",
+      "max_simplified_issue_BMI": "Approximately 50 (varies by carrier/product)"
+    }
+  },
+
+  "client_profile_decision_examples": {
+    "example_1": {
+      "profile": "52-year-old, Type 2 diabetic 4 years, controlled A1C, smoker, wants permanent coverage with living benefits, $300/month budget",
+      "analysis": {
+        "product_fit": "IUL or Whole Life with Living Benefits",
+        "primary_recommendation": "F&G Pathsetter IUL",
+        "reasoning": "T2 diabetic age 51-60: F&G is most favorable (Standard possible). Smoker: tobacco rates will apply. $300/month is solid IUL premium. Living benefits included.",
+        "secondary_option": "Corebridge QoL Max Accumulator+ (if A1C well controlled and otherwise healthy)",
+        "avoid": "MOO IUL / NLG for IUL if T2 diabetic — F&G is stronger fit",
+        "tobacco_note": "All carriers will rate as tobacco. F&G still most flexible on combined diabetes + tobacco."
+      }
+    },
+    "example_2": {
+      "profile": "Client had CHF 7 years ago, wants final expense",
+      "analysis": {
+        "primary_recommendation": "Corebridge GIWL",
+        "reasoning": "CHF history = decline on all SIWL Level products (MOO, Foresters, Ethos). GIWL has NO health questions — CHF doesn't matter. Max $25K coverage.",
+        "secondary_option": "F&G IUL (if client is younger and CHF is well managed — highly rated but may be approvable)",
+        "avoid": "MOO Living Promise Level, Foresters PlanRight Level, Ethos Advantage — all will decline CHF"
+      }
+    },
+    "example_3": {
+      "profile": "45-year-old cannabis user (2x/week recreational), clean health otherwise, wants whole life with living benefits",
+      "analysis": {
+        "primary_recommendation": "Foresters Live Well Plus or PlanRight",
+        "reasoning": "Foresters treats casual cannabis use as NON-TOBACCO — saves client potentially $100+/month in premiums. Strong living benefits (chronic + critical + terminal).",
+        "secondary_option": "Ethos (verify cannabis policy)",
+        "avoid": "Most other carriers will rate as tobacco smoker for cannabis users"
+      }
+    },
+    "example_4": {
+      "profile": "38-year-old with Hepatitis C, otherwise healthy, wants IUL",
+      "analysis": {
+        "primary_recommendation": "F&G Pathsetter IUL",
+        "reasoning": "F&G is the ONLY carrier in the Eterna lineup that accepts Hepatitis B/C. All other carriers decline.",
+        "secondary_option": "None available in current lineup",
+        "avoid": "Submitting to any other carrier — automatic decline"
+      }
+    },
+    "example_5": {
+      "profile": "Client needs coverage today — healthy 28-year-old, wants term or IUL, needs issued this week",
+      "analysis": {
+        "primary_recommendation": "InstaBrain (fastest) or Ethos IUL / F&G ExecuDex",
+        "reasoning": "All are instant/near-instant decision products for healthy younger adults. ExecuDex (F&G) is instant decision IUL for healthy clients 18-60.",
+        "secondary_option": "Corebridge Agile UW+ (24-72 hour decision)",
+        "avoid": "NLG, Transamerica full UW — too slow"
+      }
+    },
+    "example_6": {
+      "profile": "68-year-old with recent COPD diagnosis (no oxygen), wants final expense $15K",
+      "analysis": {
+        "primary_recommendation": "Mutual of Omaha Living Promise Level",
+        "reasoning": "COPD without oxygen = MOO Level FE possible. Age 68 is in sweet spot (45-85). $15K well within coverage range.",
+        "secondary_option": "Foresters PlanRight (graded if exacerbations)",
+        "graded_if_needed": "Foresters or MOO Graded if recent COPD hospitalization",
+        "last_resort": "Corebridge GIWL if no other carrier will approve"
+      }
+    }
+  },
+
+  "product_suitability_matrix": {
+    "final_expense": {
+      "tier_1": ["Mutual of Omaha (Level — best for seniors with manageable health)", "Corebridge GIWL (best backstop — no health questions)"],
+      "tier_2": ["Foresters PlanRight", "Ethos TruStage", "American Amicable Senior Choice"],
+      "tier_3": ["Transamerica FE", "F&G FE Graded"]
+    },
+    "iul_accumulation": {
+      "tier_1": ["National Life Group FlexLife (max accumulation)", "Corebridge QoL Max Accumulator+"],
+      "tier_2": ["F&G Pathsetter (impaired risk)", "F&G ExecuDex (instant, very healthy)"],
+      "tier_3": ["Ethos IUL", "Transamerica IUL"]
+    },
+    "iul_impaired_risk": {
+      "tier_1": ["F&G Pathsetter — unmatched impaired risk acceptance"],
+      "tier_2": ["Corebridge (manageable conditions)", "North American WriteAway (for eligible conditions)"],
+      "tier_3": "All others typically decline"
+    },
+    "instant_issue": {
+      "tier_1": ["InstaBrain", "Ethos", "Corebridge GIWL"],
+      "tier_2": ["MOO Living Promise", "Foresters PlanRight", "F&G ExecuDex (healthy IUL)"],
+      "tier_3": ["Corebridge AU+ (24-72 hrs)", "NLG (slower)"]
+    },
+    "living_benefits_strongest": {
+      "tier_1": ["Mutual of Omaha (chronic + terminal on IUL)", "Foresters (chronic + critical + terminal on WL)", "F&G Pathsetter (chronic + critical + terminal)"],
+      "tier_2": ["NLG FlexLife", "Corebridge QoL", "Ethos"],
+      "tier_3": ["Transamerica (primarily terminal on WL)", "American Amicable (verify)"]
+    },
+    "max_funded_iul": {
+      "tier_1": ["National Life Group FlexLife", "Corebridge QoL Max Accumulator+"],
+      "tier_2": ["F&G Pathsetter (structured for max CV)", "F&G ExecuDex"]
+    },
+    "smokers_tobacco": {
+      "cannabis_non_tobacco": ["Foresters ONLY — treats casual cannabis as non-tobacco"],
+      "standard_tobacco": "All carriers offer tobacco rates"
+    },
+    "older_clients_65_plus": {
+      "tier_1": ["Mutual of Omaha (up to 85)", "American Amicable (up to 85)", "Ethos TruStage (up to 85)"],
+      "tier_2": ["Corebridge GIWL (50-80)", "Foresters (50-85)"]
+    }
+  },
+
+  "issue_pathway_speed_ranking": {
+    "fastest_to_slowest": [
+      {"rank": 1, "carrier": "InstaBrain", "pathway": "Instant algorithm-based decision", "typical_time": "Real-time"},
+      {"rank": 2, "carrier": "Corebridge GIWL", "pathway": "Guaranteed Issue — no health questions", "typical_time": "Same day"},
+      {"rank": 3, "carrier": "Ethos TruStage Guaranteed", "pathway": "Guaranteed Issue", "typical_time": "Same day"},
+      {"rank": 4, "carrier": "Ethos TruStage Advantage", "pathway": "Simplified Issue instant decision", "typical_time": "Same day"},
+      {"rank": 5, "carrier": "F&G ExecuDex", "pathway": "Instant Decision IUL", "typical_time": "Real-time to 24hr"},
+      {"rank": 6, "carrier": "Mutual of Omaha Living Promise", "pathway": "Simplified Issue instant decision", "typical_time": "24-48 hrs"},
+      {"rank": 7, "carrier": "Foresters PlanRight", "pathway": "Simplified Issue", "typical_time": "24-72 hrs"},
+      {"rank": 8, "carrier": "American Amicable", "pathway": "Simplified Issue", "typical_time": "24-72 hrs"},
+      {"rank": 9, "carrier": "Corebridge AU+", "pathway": "Accelerated Underwriting", "typical_time": "24-72 hrs"},
+      {"rank": 10, "carrier": "F&G InstApproval® / AU", "pathway": "Accelerated Underwriting", "typical_time": "24-72 hrs"},
+      {"rank": 11, "carrier": "National Life Group WriteAway AU", "pathway": "Accelerated Underwriting", "typical_time": "3-7 days"},
+      {"rank": 12, "carrier": "Transamerica", "pathway": "AU / Full UW", "typical_time": "3-14 days"},
+      {"rank": 13, "carrier": "NLG / Corebridge Full UW", "pathway": "Full Underwriting", "typical_time": "2-6 weeks"}
+    ]
+  },
+
+  "ai_retrieval_tags": {
+    "CHF_final_expense": ["Corebridge", "GIWL", "guaranteed issue", "no health questions"],
+    "CHF_IUL": ["F&G", "Pathsetter", "rated", "impaired risk"],
+    "diabetic_IUL": ["F&G", "Pathsetter", "type 2", "type 1 onset 20+"],
+    "diabetic_FE": ["Mutual of Omaha", "Corebridge SIWL", "Living Promise"],
+    "cannabis_non_tobacco": ["Foresters", "non-tobacco", "marijuana", "cannabis"],
+    "hepatitis": ["F&G", "only carrier", "Hep B", "Hep C"],
+    "COPD_FE": ["Mutual of Omaha", "Level", "no oxygen"],
+    "COPD_oxygen": ["Corebridge", "GIWL", "guaranteed issue"],
+    "COPD_IUL": ["F&G", "Pathsetter"],
+    "stroke_FE": ["Mutual of Omaha", "Foresters", "3 years", "no deficits"],
+    "stroke_IUL": ["F&G", "highly rated", "approvable"],
+    "instant_issue": ["InstaBrain", "Ethos", "Corebridge GIWL", "same day"],
+    "max_funded_IUL": ["National Life Group", "FlexLife", "Corebridge QoL Max Accumulator+"],
+    "seniors_65_plus": ["Mutual of Omaha", "American Amicable", "Ethos TruStage", "age 85"],
+    "bipolar_IUL": ["F&G", "only option", "rated"],
+    "high_BMI": ["F&G", "BMI 37-46", "rated"],
+    "depression_anxiety": ["Corebridge AU", "F&G", "NLG", "single medication stable"],
+    "living_benefits_strongest": ["Foresters", "chronic critical terminal", "Mutual of Omaha"],
+    "fastest_placement": ["InstaBrain", "Ethos", "Corebridge GIWL"],
+    "declined_elsewhere": ["Corebridge GIWL", "Ethos TruStage Guaranteed", "guaranteed issue"]
+  }
+}
