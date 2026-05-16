@@ -1,0 +1,32 @@
+{
+  "conditions": {
+    "chf": {
+      "aliases": ["congestive heart failure", "heart failure"],
+      "severity": "severe",
+      "follow_up_questions": ["When was the last CHF exacerbation or hospitalization?", "Current EF and cardiology follow-up?", "Any fluid retention or oxygen use currently?"]
+    },
+    "active_cancer": {"aliases": ["current cancer", "on chemo", "radiation"], "severity": "severe", "follow_up_questions": ["Cancer type and stage?", "Currently in treatment?", "Any metastasis?"]},
+    "cancer_history": {"aliases": ["cancer remission", "history of cancer"], "severity": "moderate", "follow_up_questions": ["What cancer type?", "How many years since treatment ended?", "Any recurrence?"]},
+    "dementia": {"aliases": ["alzheimers", "memory loss diagnosis"], "severity": "severe", "follow_up_questions": ["Formal diagnosis date?", "Any cognitive safety concerns?", "Any POA/caregiver involved?"]},
+    "dialysis_esrd": {"aliases": ["dialysis", "esrd", "end stage renal disease"], "severity": "severe", "follow_up_questions": ["Currently on dialysis?", "Dialysis schedule?", "Any transplant history?"]},
+    "copd": {"aliases": ["chronic obstructive pulmonary disease", "emphysema"], "severity": "moderate", "follow_up_questions": ["Any oxygen use?", "COPD exacerbations in last 12 months?", "Any recent hospitalizations for breathing?"]},
+    "oxygen_use": {"aliases": ["home oxygen", "supplemental oxygen"], "severity": "severe", "follow_up_questions": ["Continuous or nighttime oxygen only?", "How long on oxygen?", "Underlying diagnosis requiring oxygen?"]},
+    "stroke": {"aliases": ["cva", "tia", "cerebrovascular accident"], "severity": "moderate", "follow_up_questions": ["How long since last stroke/TIA?", "Any residual deficits?", "Any recurrent events?"]},
+    "type_1_diabetes": {"aliases": ["t1d", "juvenile diabetes"], "severity": "moderate", "follow_up_questions": ["Onset age?", "Recent A1C?", "Any complications (neuropathy, nephropathy, retinopathy)?"]},
+    "type_2_diabetes": {"aliases": ["t2d", "adult onset diabetes"], "severity": "moderate", "follow_up_questions": ["Current A1C?", "Any insulin use?", "Any diabetic complications?"]},
+    "insulin_use": {"aliases": ["insulin dependent"], "severity": "moderate", "follow_up_questions": ["What insulin regimen?", "How long on insulin?", "Any hypoglycemic ER events?"]},
+    "kidney_disease": {"aliases": ["ckd", "chronic kidney disease"], "severity": "moderate", "follow_up_questions": ["CKD stage?", "Creatinine/eGFR trend?", "Nephrology follow-up?"]},
+    "hepatitis_b": {"aliases": ["hep b", "hepb"], "severity": "moderate", "follow_up_questions": ["Viral load status?", "Any cirrhosis?", "Current treatment?"]},
+    "hepatitis_c": {"aliases": ["hep c", "hepc"], "severity": "moderate", "follow_up_questions": ["Cured/undetectable status?", "Any liver fibrosis/cirrhosis?", "Current treatment?"]},
+    "bipolar_disorder": {"aliases": ["bipolar", "bipolar i", "bipolar ii"], "severity": "moderate", "follow_up_questions": ["Hospitalizations in last 5 years?", "Medication adherence?", "Any disability leave due to condition?"]},
+    "marijuana_cannabis": {"aliases": ["cannabis", "weed", "thc"], "severity": "mild", "follow_up_questions": ["Frequency of use?", "Smoked vs edible?", "Any concurrent nicotine/vape use?"]},
+    "tobacco": {"aliases": ["smoker", "cigarettes", "chew"], "severity": "mild", "follow_up_questions": ["What tobacco type?", "Daily frequency?", "Any quit attempt in last 12 months?"]},
+    "vaping_nicotine": {"aliases": ["vape", "nicotine vape", "e-cig"], "severity": "mild", "follow_up_questions": ["Nicotine concentration?", "Frequency of vaping?", "Any dual tobacco use?"]},
+    "dui": {"aliases": ["dwi", "mvr violation"], "severity": "moderate", "follow_up_questions": ["Most recent DUI date?", "How many total DUIs?", "Any license suspension or unresolved case?"]},
+    "high_bmi": {"aliases": ["obesity", "build chart"], "severity": "moderate", "follow_up_questions": ["Current BMI/height/weight trend?", "Any obesity meds (GLP-1)?", "Any sleep apnea or diabetes comorbidity?"]},
+    "hypertension": {"aliases": ["htn", "high blood pressure"], "severity": "mild", "follow_up_questions": ["How many BP meds?", "Typical blood pressure readings?", "Any end-organ complications?"]},
+    "hyperlipidemia": {"aliases": ["high cholesterol", "hld"], "severity": "mild", "follow_up_questions": ["On statin?", "Recent lipid panel?", "Any CAD/PAD history?"]},
+    "anxiety_depression": {"aliases": ["anxiety", "depression", "mdd"], "severity": "mild", "follow_up_questions": ["Stable on meds >12 months?", "Any psychiatric hospitalization?", "Any work disability due to symptoms?"]},
+    "sleep_apnea": {"aliases": ["osa", "obstructive sleep apnea"], "severity": "mild", "follow_up_questions": ["CPAP compliant?", "Any daytime somnolence incidents?", "Any recent sleep study?"]}
+  }
+}

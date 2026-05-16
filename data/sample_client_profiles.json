@@ -1,0 +1,604 @@
+{
+  "profiles": [
+    {
+      "name": "70-year-old with CHF wanting final expense",
+      "age": 70,
+      "gender": "male",
+      "state": "TX",
+      "height": "5'9",
+      "weight": 210,
+      "tobacco": false,
+      "nicotine_vape": false,
+      "marijuana_cannabis": false,
+      "product_goal": "final_expense",
+      "budget_monthly": 150,
+      "desired_coverage": 15000,
+      "conditions": [
+        {
+          "condition": "chf"
+        }
+      ],
+      "medications": [],
+      "hospitalizations": [],
+      "surgeries": [],
+      "dui_mvr_history": {},
+      "criminal_history": null,
+      "current_coverage": null,
+      "primary_objective": "burial coverage",
+      "speed_priority": "balanced"
+    },
+    {
+      "name": "52-year-old Type 2 diabetic wanting IUL",
+      "age": 52,
+      "gender": "male",
+      "state": "TX",
+      "height": "5'10",
+      "weight": 230,
+      "tobacco": false,
+      "nicotine_vape": false,
+      "marijuana_cannabis": false,
+      "product_goal": "iul",
+      "budget_monthly": 300,
+      "desired_coverage": 150000,
+      "conditions": [
+        {
+          "condition": "type_2_diabetes"
+        }
+      ],
+      "medications": [
+        "metformin"
+      ],
+      "hospitalizations": [],
+      "surgeries": [],
+      "dui_mvr_history": {},
+      "criminal_history": null,
+      "current_coverage": null,
+      "primary_objective": "cash value growth and living benefits",
+      "speed_priority": "balanced"
+    },
+    {
+      "name": "45-year-old healthy client wanting instant term",
+      "age": 45,
+      "gender": "female",
+      "state": "FL",
+      "height": "5'6",
+      "weight": 150,
+      "tobacco": false,
+      "nicotine_vape": false,
+      "marijuana_cannabis": false,
+      "product_goal": "term",
+      "budget_monthly": 120,
+      "desired_coverage": 500000,
+      "conditions": [],
+      "medications": [],
+      "hospitalizations": [],
+      "surgeries": [],
+      "dui_mvr_history": {},
+      "criminal_history": null,
+      "current_coverage": null,
+      "primary_objective": "fast approval",
+      "speed_priority": "instant"
+    },
+    {
+      "name": "65-year-old cannabis user wanting final expense",
+      "age": 65,
+      "gender": "male",
+      "state": "CA",
+      "height": "5'11",
+      "weight": 190,
+      "tobacco": false,
+      "nicotine_vape": false,
+      "marijuana_cannabis": true,
+      "product_goal": "final_expense",
+      "budget_monthly": 130,
+      "desired_coverage": 20000,
+      "conditions": [],
+      "medications": [],
+      "hospitalizations": [],
+      "surgeries": [],
+      "dui_mvr_history": {},
+      "criminal_history": null,
+      "current_coverage": null,
+      "primary_objective": "burial coverage",
+      "speed_priority": "balanced"
+    },
+    {
+      "name": "71-year-old with dementia wanting burial coverage",
+      "age": 71,
+      "gender": "female",
+      "state": "AZ",
+      "height": "5'4",
+      "weight": 155,
+      "tobacco": false,
+      "nicotine_vape": false,
+      "marijuana_cannabis": false,
+      "product_goal": "final_expense",
+      "budget_monthly": 140,
+      "desired_coverage": 12000,
+      "conditions": [
+        {
+          "condition": "dementia"
+        }
+      ],
+      "medications": [],
+      "hospitalizations": [],
+      "surgeries": [],
+      "dui_mvr_history": {},
+      "criminal_history": null,
+      "current_coverage": null,
+      "primary_objective": "burial coverage",
+      "speed_priority": "balanced"
+    },
+    {
+      "name": "58-year-old with recent DUI wanting term",
+      "age": 58,
+      "gender": "male",
+      "state": "GA",
+      "height": "6'0",
+      "weight": 220,
+      "tobacco": false,
+      "nicotine_vape": false,
+      "marijuana_cannabis": false,
+      "product_goal": "term",
+      "budget_monthly": 180,
+      "desired_coverage": 300000,
+      "conditions": [
+        {
+          "condition": "dui"
+        }
+      ],
+      "medications": [],
+      "hospitalizations": [],
+      "surgeries": [],
+      "dui_mvr_history": {
+        "recent_dui": true
+      },
+      "criminal_history": null,
+      "current_coverage": null,
+      "primary_objective": "living benefits and speed",
+      "speed_priority": "instant"
+    },
+    {
+      "name": "60-year-old with COPD and oxygen use wanting final expense",
+      "age": 60,
+      "gender": "female",
+      "state": "OH",
+      "height": "5'7",
+      "weight": 180,
+      "tobacco": true,
+      "nicotine_vape": false,
+      "marijuana_cannabis": false,
+      "product_goal": "final_expense",
+      "budget_monthly": 170,
+      "desired_coverage": 10000,
+      "conditions": [
+        {
+          "condition": "copd"
+        },
+        {
+          "condition": "oxygen_use"
+        }
+      ],
+      "medications": [],
+      "hospitalizations": [],
+      "surgeries": [],
+      "dui_mvr_history": {},
+      "criminal_history": null,
+      "current_coverage": null,
+      "primary_objective": "approval probability",
+      "speed_priority": "balanced"
+    },
+    {
+      "name": "50-year-old healthy high-income client wanting max-funded IUL",
+      "age": 50,
+      "gender": "male",
+      "state": "TX",
+      "height": "5'10",
+      "weight": 175,
+      "tobacco": false,
+      "nicotine_vape": false,
+      "marijuana_cannabis": false,
+      "product_goal": "iul",
+      "budget_monthly": 1000,
+      "desired_coverage": 500000,
+      "conditions": [],
+      "medications": [],
+      "hospitalizations": [],
+      "surgeries": [],
+      "dui_mvr_history": {},
+      "criminal_history": null,
+      "current_coverage": null,
+      "primary_objective": "max-funded accumulation and living benefits",
+      "speed_priority": "balanced"
+    },
+    {
+      "name": "66-year-old active cancer wanting final expense",
+      "age": 66,
+      "gender": "female",
+      "state": "TX",
+      "height": "5'5",
+      "weight": 160,
+      "tobacco": false,
+      "nicotine_vape": false,
+      "marijuana_cannabis": false,
+      "product_goal": "final_expense",
+      "budget_monthly": 140,
+      "desired_coverage": 15000,
+      "conditions": [
+        {
+          "condition": "active_cancer"
+        }
+      ],
+      "medications": [],
+      "hospitalizations": [],
+      "surgeries": [],
+      "dui_mvr_history": {},
+      "criminal_history": null,
+      "current_coverage": null,
+      "primary_objective": "burial coverage",
+      "speed_priority": "balanced"
+    },
+    {
+      "name": "68-year-old dialysis patient wanting final expense",
+      "age": 68,
+      "gender": "male",
+      "state": "FL",
+      "height": "5'8",
+      "weight": 170,
+      "tobacco": false,
+      "nicotine_vape": false,
+      "marijuana_cannabis": false,
+      "product_goal": "final_expense",
+      "budget_monthly": 160,
+      "desired_coverage": 12000,
+      "conditions": [
+        {
+          "condition": "dialysis_esrd"
+        }
+      ],
+      "medications": [],
+      "hospitalizations": [],
+      "surgeries": [],
+      "dui_mvr_history": {},
+      "criminal_history": null,
+      "current_coverage": null,
+      "primary_objective": "burial coverage",
+      "speed_priority": "balanced"
+    },
+    {
+      "name": "69-year-old stroke 4 years ago wanting final expense",
+      "age": 69,
+      "gender": "male",
+      "state": "OH",
+      "height": "5'9",
+      "weight": 185,
+      "tobacco": false,
+      "nicotine_vape": false,
+      "marijuana_cannabis": false,
+      "product_goal": "final_expense",
+      "budget_monthly": 150,
+      "desired_coverage": 15000,
+      "conditions": [
+        {
+          "condition": "stroke"
+        }
+      ],
+      "medications": [],
+      "hospitalizations": [],
+      "surgeries": [],
+      "dui_mvr_history": {},
+      "criminal_history": null,
+      "current_coverage": null,
+      "primary_objective": "burial coverage",
+      "speed_priority": "balanced"
+    },
+    {
+      "name": "64-year-old recent stroke wanting final expense",
+      "age": 64,
+      "gender": "female",
+      "state": "GA",
+      "height": "5'6",
+      "weight": 175,
+      "tobacco": false,
+      "nicotine_vape": false,
+      "marijuana_cannabis": false,
+      "product_goal": "final_expense",
+      "budget_monthly": 150,
+      "desired_coverage": 10000,
+      "conditions": [
+        {
+          "condition": "stroke"
+        }
+      ],
+      "medications": [],
+      "hospitalizations": [
+        "stroke admission 8 months ago"
+      ],
+      "surgeries": [],
+      "dui_mvr_history": {},
+      "criminal_history": null,
+      "current_coverage": null,
+      "primary_objective": "burial coverage",
+      "speed_priority": "balanced"
+    },
+    {
+      "name": "68-year-old COPD without oxygen wanting final expense",
+      "age": 68,
+      "gender": "male",
+      "state": "AZ",
+      "height": "5'10",
+      "weight": 200,
+      "tobacco": true,
+      "nicotine_vape": false,
+      "marijuana_cannabis": false,
+      "product_goal": "final_expense",
+      "budget_monthly": 170,
+      "desired_coverage": 18000,
+      "conditions": [
+        {
+          "condition": "copd"
+        }
+      ],
+      "medications": [],
+      "hospitalizations": [],
+      "surgeries": [],
+      "dui_mvr_history": {},
+      "criminal_history": null,
+      "current_coverage": null,
+      "primary_objective": "burial coverage",
+      "speed_priority": "balanced"
+    },
+    {
+      "name": "42-year-old Type 1 diabetic wanting IUL",
+      "age": 42,
+      "gender": "female",
+      "state": "TX",
+      "height": "5'7",
+      "weight": 165,
+      "tobacco": false,
+      "nicotine_vape": false,
+      "marijuana_cannabis": false,
+      "product_goal": "iul",
+      "budget_monthly": 350,
+      "desired_coverage": 250000,
+      "conditions": [
+        {
+          "condition": "type_1_diabetes"
+        }
+      ],
+      "medications": [
+        "insulin"
+      ],
+      "hospitalizations": [],
+      "surgeries": [],
+      "dui_mvr_history": {},
+      "criminal_history": null,
+      "current_coverage": null,
+      "primary_objective": "cash value growth and living benefits",
+      "speed_priority": "balanced"
+    },
+    {
+      "name": "47-year-old Hepatitis C wanting IUL",
+      "age": 47,
+      "gender": "male",
+      "state": "CA",
+      "height": "5'11",
+      "weight": 195,
+      "tobacco": false,
+      "nicotine_vape": false,
+      "marijuana_cannabis": false,
+      "product_goal": "iul",
+      "budget_monthly": 400,
+      "desired_coverage": 300000,
+      "conditions": [
+        {
+          "condition": "hepatitis_c"
+        }
+      ],
+      "medications": [],
+      "hospitalizations": [],
+      "surgeries": [],
+      "dui_mvr_history": {},
+      "criminal_history": null,
+      "current_coverage": null,
+      "primary_objective": "retirement accumulation",
+      "speed_priority": "balanced"
+    },
+    {
+      "name": "55-year-old bipolar disorder wanting IUL",
+      "age": 55,
+      "gender": "female",
+      "state": "NC",
+      "height": "5'5",
+      "weight": 170,
+      "tobacco": false,
+      "nicotine_vape": false,
+      "marijuana_cannabis": false,
+      "product_goal": "iul",
+      "budget_monthly": 325,
+      "desired_coverage": 200000,
+      "conditions": [
+        {
+          "condition": "bipolar_disorder"
+        }
+      ],
+      "medications": [],
+      "hospitalizations": [],
+      "surgeries": [],
+      "dui_mvr_history": {},
+      "criminal_history": null,
+      "current_coverage": null,
+      "primary_objective": "living benefits and cash value",
+      "speed_priority": "balanced"
+    },
+    {
+      "name": "48-year-old high BMI wanting IUL",
+      "age": 48,
+      "gender": "male",
+      "state": "TX",
+      "height": "5'8",
+      "weight": 285,
+      "tobacco": false,
+      "nicotine_vape": false,
+      "marijuana_cannabis": false,
+      "product_goal": "iul",
+      "budget_monthly": 300,
+      "desired_coverage": 250000,
+      "conditions": [
+        {
+          "condition": "high_bmi"
+        }
+      ],
+      "medications": [],
+      "hospitalizations": [],
+      "surgeries": [],
+      "dui_mvr_history": {},
+      "criminal_history": null,
+      "current_coverage": null,
+      "primary_objective": "cash value accumulation",
+      "speed_priority": "balanced"
+    },
+    {
+      "name": "46-year-old marijuana user wanting term",
+      "age": 46,
+      "gender": "male",
+      "state": "CO",
+      "height": "5'10",
+      "weight": 190,
+      "tobacco": false,
+      "nicotine_vape": false,
+      "marijuana_cannabis": true,
+      "product_goal": "term",
+      "budget_monthly": 140,
+      "desired_coverage": 400000,
+      "conditions": [],
+      "medications": [],
+      "hospitalizations": [],
+      "surgeries": [],
+      "dui_mvr_history": {},
+      "criminal_history": null,
+      "current_coverage": null,
+      "primary_objective": "fast approval",
+      "speed_priority": "instant"
+    },
+    {
+      "name": "44-year-old nicotine vaping wanting term",
+      "age": 44,
+      "gender": "female",
+      "state": "NV",
+      "height": "5'6",
+      "weight": 155,
+      "tobacco": false,
+      "nicotine_vape": true,
+      "marijuana_cannabis": false,
+      "product_goal": "term",
+      "budget_monthly": 130,
+      "desired_coverage": 350000,
+      "conditions": [],
+      "medications": [],
+      "hospitalizations": [],
+      "surgeries": [],
+      "dui_mvr_history": {},
+      "criminal_history": null,
+      "current_coverage": null,
+      "primary_objective": "speed and affordability",
+      "speed_priority": "instant"
+    },
+    {
+      "name": "82-year-old healthy senior wanting final expense",
+      "age": 82,
+      "gender": "female",
+      "state": "TX",
+      "height": "5'3",
+      "weight": 145,
+      "tobacco": false,
+      "nicotine_vape": false,
+      "marijuana_cannabis": false,
+      "product_goal": "final_expense",
+      "budget_monthly": 120,
+      "desired_coverage": 10000,
+      "conditions": [],
+      "medications": [],
+      "hospitalizations": [],
+      "surgeries": [],
+      "dui_mvr_history": {},
+      "criminal_history": null,
+      "current_coverage": null,
+      "primary_objective": "burial coverage",
+      "speed_priority": "balanced"
+    },
+    {
+      "name": "90-year-old wanting final expense",
+      "age": 90,
+      "gender": "male",
+      "state": "TX",
+      "height": "5'8",
+      "weight": 170,
+      "tobacco": false,
+      "nicotine_vape": false,
+      "marijuana_cannabis": false,
+      "product_goal": "final_expense",
+      "budget_monthly": 100,
+      "desired_coverage": 8000,
+      "conditions": [],
+      "medications": [],
+      "hospitalizations": [],
+      "surgeries": [],
+      "dui_mvr_history": {},
+      "criminal_history": null,
+      "current_coverage": null,
+      "primary_objective": "burial coverage",
+      "speed_priority": "balanced"
+    },
+    {
+      "name": "50-year-old wanting very high IUL coverage",
+      "age": 50,
+      "gender": "male",
+      "state": "CA",
+      "height": "5'11",
+      "weight": 180,
+      "tobacco": false,
+      "nicotine_vape": false,
+      "marijuana_cannabis": false,
+      "product_goal": "iul",
+      "budget_monthly": 500,
+      "desired_coverage": 5000000,
+      "conditions": [],
+      "medications": [],
+      "hospitalizations": [],
+      "surgeries": [],
+      "dui_mvr_history": {},
+      "criminal_history": null,
+      "current_coverage": null,
+      "primary_objective": "max-funded accumulation",
+      "speed_priority": "balanced"
+    },
+    {
+      "name": "53-year-old unclear diabetes details wanting IUL",
+      "age": 53,
+      "gender": "female",
+      "state": "TX",
+      "height": "5'4",
+      "weight": 190,
+      "tobacco": false,
+      "nicotine_vape": false,
+      "marijuana_cannabis": false,
+      "product_goal": "iul",
+      "budget_monthly": 280,
+      "desired_coverage": 175000,
+      "conditions": [
+        {
+          "condition": "diabetes"
+        }
+      ],
+      "medications": [],
+      "hospitalizations": [],
+      "surgeries": [],
+      "dui_mvr_history": {},
+      "criminal_history": null,
+      "current_coverage": null,
+      "primary_objective": "living benefits",
+      "speed_priority": "balanced"
+    }
+  ]
+}

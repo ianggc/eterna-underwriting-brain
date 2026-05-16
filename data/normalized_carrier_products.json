@@ -1,0 +1,458 @@
+{
+  "products": [
+    {
+      "carrier": "Mutual of Omaha",
+      "product": "Living Promise Level",
+      "goal_fit": [
+        "final_expense"
+      ],
+      "age_min": 45,
+      "age_max": 85,
+      "face_min": 2000,
+      "face_max": 40000,
+      "approval_path": "simplified_issue",
+      "speed": "fast",
+      "living_benefits": false,
+      "budget_tier": "standard",
+      "condition_tolerances": [
+        "type_2_diabetes",
+        "copd",
+        "hypertension",
+        "hyperlipidemia",
+        "anxiety_depression",
+        "sleep_apnea",
+        "cancer_history"
+      ],
+      "knockout_conditions": [
+        "chf",
+        "dementia",
+        "active_cancer",
+        "oxygen_use",
+        "dialysis_esrd"
+      ],
+      "lookback_years": {
+        "dui": 5,
+        "cancer_history": 2
+      },
+      "source_notes": [
+        "COPD without oxygen favorable.",
+        "DATA_GAP: exact stroke timing rules by product form."
+      ]
+    },
+    {
+      "carrier": "Mutual of Omaha",
+      "product": "Living Promise Graded",
+      "goal_fit": [
+        "final_expense"
+      ],
+      "age_min": 45,
+      "age_max": 85,
+      "face_min": 2000,
+      "face_max": 25000,
+      "approval_path": "graded",
+      "speed": "fast",
+      "living_benefits": false,
+      "budget_tier": "standard",
+      "condition_tolerances": [
+        "cancer_history",
+        "type_2_diabetes",
+        "stroke"
+      ],
+      "knockout_conditions": [
+        "dementia",
+        "oxygen_use",
+        "dialysis_esrd"
+      ],
+      "lookback_years": {
+        "dui": 5,
+        "cancer_history": 2
+      }
+    },
+    {
+      "carrier": "Foresters Financial",
+      "product": "PlanRight Level",
+      "goal_fit": [
+        "final_expense"
+      ],
+      "age_min": 50,
+      "age_max": 85,
+      "face_min": 2000,
+      "face_max": 35000,
+      "approval_path": "simplified_issue",
+      "speed": "fast",
+      "living_benefits": false,
+      "budget_tier": "standard",
+      "condition_tolerances": [
+        "marijuana_cannabis",
+        "hypertension",
+        "type_2_diabetes",
+        "copd"
+      ],
+      "knockout_conditions": [
+        "dementia",
+        "oxygen_use",
+        "active_cancer",
+        "dialysis_esrd"
+      ],
+      "lookback_years": {
+        "drug_history": 10,
+        "cancer_history": 2
+      }
+    },
+    {
+      "carrier": "Foresters Financial",
+      "product": "PlanRight Graded",
+      "goal_fit": [
+        "final_expense"
+      ],
+      "age_min": 50,
+      "age_max": 85,
+      "face_min": 2000,
+      "face_max": 20000,
+      "approval_path": "graded",
+      "speed": "fast",
+      "living_benefits": false,
+      "budget_tier": "standard",
+      "condition_tolerances": [
+        "marijuana_cannabis",
+        "type_2_diabetes",
+        "stroke"
+      ],
+      "knockout_conditions": [
+        "dementia",
+        "oxygen_use",
+        "dialysis_esrd"
+      ],
+      "lookback_years": {
+        "drug_history": 10
+      }
+    },
+    {
+      "carrier": "Corebridge",
+      "product": "GIWL",
+      "goal_fit": [
+        "final_expense"
+      ],
+      "age_min": 50,
+      "age_max": 80,
+      "face_min": 5000,
+      "face_max": 25000,
+      "approval_path": "guaranteed_issue",
+      "speed": "fast",
+      "living_benefits": false,
+      "budget_tier": "standard",
+      "condition_tolerances": [
+        "chf",
+        "dementia",
+        "dialysis_esrd",
+        "active_cancer",
+        "oxygen_use",
+        "copd",
+        "stroke",
+        "dui"
+      ],
+      "knockout_conditions": [],
+      "lookback_years": {}
+    },
+    {
+      "carrier": "Ethos",
+      "product": "TruStage Guaranteed",
+      "goal_fit": [
+        "final_expense"
+      ],
+      "age_min": 40,
+      "age_max": 85,
+      "face_min": 2000,
+      "face_max": 25000,
+      "approval_path": "guaranteed_issue",
+      "speed": "fast",
+      "living_benefits": false,
+      "budget_tier": "standard",
+      "condition_tolerances": [
+        "chf",
+        "dementia",
+        "dialysis_esrd",
+        "active_cancer",
+        "oxygen_use",
+        "dui"
+      ],
+      "knockout_conditions": [],
+      "lookback_years": {}
+    },
+    {
+      "carrier": "American Amicable",
+      "product": "Senior Choice Immediate",
+      "goal_fit": [
+        "final_expense"
+      ],
+      "age_min": 50,
+      "age_max": 85,
+      "face_min": 2500,
+      "face_max": 50000,
+      "approval_path": "simplified_issue",
+      "speed": "medium",
+      "living_benefits": false,
+      "budget_tier": "standard",
+      "condition_tolerances": [
+        "hypertension",
+        "sleep_apnea",
+        "type_2_diabetes"
+      ],
+      "knockout_conditions": [
+        "chf",
+        "dementia",
+        "oxygen_use",
+        "active_cancer",
+        "dialysis_esrd"
+      ]
+    },
+    {
+      "carrier": "American Amicable",
+      "product": "Senior Choice Graded",
+      "goal_fit": [
+        "final_expense"
+      ],
+      "age_min": 50,
+      "age_max": 85,
+      "face_min": 2500,
+      "face_max": 35000,
+      "approval_path": "graded",
+      "speed": "medium",
+      "living_benefits": false,
+      "budget_tier": "standard",
+      "condition_tolerances": [
+        "stroke",
+        "cancer_history",
+        "type_2_diabetes"
+      ],
+      "knockout_conditions": [
+        "dementia",
+        "oxygen_use",
+        "dialysis_esrd"
+      ]
+    },
+    {
+      "carrier": "American Amicable",
+      "product": "Senior Choice ROP",
+      "goal_fit": [
+        "final_expense"
+      ],
+      "age_min": 50,
+      "age_max": 85,
+      "face_min": 2500,
+      "face_max": 25000,
+      "approval_path": "graded",
+      "speed": "medium",
+      "living_benefits": false,
+      "budget_tier": "standard",
+      "condition_tolerances": [
+        "hypertension",
+        "hyperlipidemia"
+      ],
+      "knockout_conditions": [
+        "chf",
+        "dementia",
+        "active_cancer",
+        "dialysis_esrd"
+      ]
+    },
+    {
+      "carrier": "Transamerica",
+      "product": "Immediate Solution",
+      "goal_fit": [
+        "final_expense"
+      ],
+      "age_min": 50,
+      "age_max": 80,
+      "face_min": 1000,
+      "face_max": 50000,
+      "approval_path": "simplified_issue",
+      "speed": "medium",
+      "living_benefits": false,
+      "budget_tier": "standard",
+      "condition_tolerances": [
+        "hypertension",
+        "type_2_diabetes",
+        "hyperlipidemia"
+      ],
+      "knockout_conditions": [
+        "chf",
+        "dementia",
+        "dialysis_esrd",
+        "oxygen_use"
+      ]
+    },
+    {
+      "carrier": "Transamerica",
+      "product": "Easy Solution Graded",
+      "goal_fit": [
+        "final_expense"
+      ],
+      "age_min": 50,
+      "age_max": 80,
+      "face_min": 1000,
+      "face_max": 25000,
+      "approval_path": "graded",
+      "speed": "medium",
+      "living_benefits": false,
+      "budget_tier": "standard",
+      "condition_tolerances": [
+        "cancer_history",
+        "stroke"
+      ],
+      "knockout_conditions": [
+        "dementia",
+        "dialysis_esrd"
+      ]
+    },
+    {
+      "carrier": "F&G",
+      "product": "Pathsetter IUL",
+      "goal_fit": [
+        "iul"
+      ],
+      "age_min": 0,
+      "age_max": 80,
+      "face_min": 50000,
+      "face_max": 1000000,
+      "approval_path": "full_underwriting",
+      "speed": "fast",
+      "living_benefits": true,
+      "budget_tier": "premium",
+      "condition_tolerances": [
+        "type_1_diabetes",
+        "type_2_diabetes",
+        "copd",
+        "stroke",
+        "bipolar_disorder",
+        "hepatitis_b",
+        "hepatitis_c",
+        "high_bmi",
+        "chf"
+      ],
+      "knockout_conditions": [
+        "active_cancer",
+        "dialysis_esrd",
+        "oxygen_use"
+      ],
+      "source_notes": [
+        "F&G is primary impaired-risk IUL path."
+      ]
+    },
+    {
+      "carrier": "F&G",
+      "product": "ExecuDex IUL",
+      "goal_fit": [
+        "iul"
+      ],
+      "age_min": 18,
+      "age_max": 60,
+      "face_min": 150000,
+      "face_max": 1000000,
+      "approval_path": "accelerated_issue",
+      "speed": "fast",
+      "living_benefits": true,
+      "budget_tier": "premium",
+      "condition_tolerances": [
+        "hypertension",
+        "hyperlipidemia"
+      ],
+      "knockout_conditions": [
+        "type_1_diabetes",
+        "bipolar_disorder",
+        "hepatitis_b",
+        "hepatitis_c",
+        "active_cancer",
+        "oxygen_use"
+      ],
+      "source_notes": [
+        "DATA_GAP: physical bank requirement verification pending."
+      ]
+    },
+    {
+      "carrier": "Corebridge",
+      "product": "QoL Max Accumulator+",
+      "goal_fit": [
+        "iul"
+      ],
+      "age_min": 18,
+      "age_max": 65,
+      "face_min": 50000,
+      "face_max": 2000000,
+      "approval_path": "full_underwriting",
+      "speed": "medium",
+      "living_benefits": true,
+      "budget_tier": "premium",
+      "condition_tolerances": [
+        "hypertension",
+        "hyperlipidemia",
+        "anxiety_depression",
+        "sleep_apnea",
+        "type_2_diabetes"
+      ],
+      "knockout_conditions": [
+        "active_cancer",
+        "dialysis_esrd",
+        "dementia"
+      ]
+    },
+    {
+      "carrier": "National Life Group",
+      "product": "FlexLife IUL",
+      "goal_fit": [
+        "iul"
+      ],
+      "age_min": 0,
+      "age_max": 85,
+      "face_min": 50000,
+      "face_max": 2000000,
+      "approval_path": "full_underwriting",
+      "speed": "medium",
+      "living_benefits": true,
+      "budget_tier": "premium",
+      "condition_tolerances": [
+        "hypertension",
+        "hyperlipidemia",
+        "anxiety_depression",
+        "sleep_apnea",
+        "type_2_diabetes"
+      ],
+      "knockout_conditions": [
+        "active_cancer",
+        "dialysis_esrd",
+        "dementia"
+      ]
+    },
+    {
+      "carrier": "InstaBrain",
+      "product": "Instant Term w/Living Benefits",
+      "goal_fit": [
+        "term"
+      ],
+      "age_min": 20,
+      "age_max": 60,
+      "face_min": 100000,
+      "face_max": 2000000,
+      "approval_path": "accelerated_issue",
+      "speed": "fast",
+      "living_benefits": true,
+      "budget_tier": "standard",
+      "condition_tolerances": [
+        "hypertension"
+      ],
+      "knockout_conditions": [
+        "dui",
+        "marijuana_cannabis",
+        "vaping_nicotine",
+        "copd",
+        "kidney_disease",
+        "active_cancer",
+        "chf",
+        "stroke"
+      ],
+      "source_notes": [
+        "DATA_GAP: verify current InstaBrain product matrix from portal."
+      ]
+    }
+  ]
+}

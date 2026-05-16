@@ -1,0 +1,408 @@
+{
+  "audits": [
+    {
+      "profile_name": "70-year-old with CHF wanting final expense",
+      "acceptable_primary_products": [
+        "Corebridge::GIWL",
+        "Ethos::TruStage Guaranteed"
+      ],
+      "unacceptable_primary_products": [
+        "Mutual of Omaha::Living Promise Level",
+        "Foresters Financial::PlanRight Level",
+        "American Amicable::Senior Choice Immediate"
+      ],
+      "expected_decision_category": "guaranteed_issue_fallback",
+      "expected_manual_review_required": false,
+      "required_warning_keywords": [
+        ""
+      ],
+      "required_missing_question_keywords": [
+        "CHF",
+        "cardiology"
+      ]
+    },
+    {
+      "profile_name": "52-year-old Type 2 diabetic wanting IUL",
+      "acceptable_primary_products": [
+        "F&G::Pathsetter IUL"
+      ],
+      "unacceptable_primary_products": [],
+      "expected_decision_category": "impaired_risk_match",
+      "expected_manual_review_required": false,
+      "required_warning_keywords": [
+        ""
+      ],
+      "required_missing_question_keywords": [
+        "A1C",
+        "insulin"
+      ]
+    },
+    {
+      "profile_name": "45-year-old healthy client wanting instant term",
+      "acceptable_primary_products": [
+        "InstaBrain::Instant Term w/Living Benefits"
+      ],
+      "unacceptable_primary_products": [],
+      "expected_decision_category": "clean_match",
+      "expected_manual_review_required": false,
+      "required_warning_keywords": [
+        ""
+      ],
+      "required_missing_question_keywords": [
+        "hospitalizations"
+      ]
+    },
+    {
+      "profile_name": "65-year-old cannabis user wanting final expense",
+      "acceptable_primary_products": [
+        "Foresters Financial::PlanRight Level"
+      ],
+      "unacceptable_primary_products": [],
+      "expected_decision_category": "clean_match",
+      "expected_manual_review_required": false,
+      "required_warning_keywords": [
+        ""
+      ],
+      "required_missing_question_keywords": [
+        "vape",
+        "edible"
+      ]
+    },
+    {
+      "profile_name": "71-year-old with dementia wanting burial coverage",
+      "acceptable_primary_products": [
+        "Corebridge::GIWL",
+        "Ethos::TruStage Guaranteed"
+      ],
+      "unacceptable_primary_products": [],
+      "expected_decision_category": "guaranteed_issue_fallback",
+      "expected_manual_review_required": false,
+      "required_warning_keywords": [
+        ""
+      ],
+      "required_missing_question_keywords": [
+        "diagnosis",
+        "caregiver"
+      ]
+    },
+    {
+      "profile_name": "58-year-old with recent DUI wanting term",
+      "acceptable_primary_products": [
+        "needs_more_info::manual_review"
+      ],
+      "unacceptable_primary_products": [
+        "Corebridge::GIWL",
+        "Ethos::TruStage Guaranteed",
+        "Mutual of Omaha::Living Promise Level",
+        "Foresters Financial::PlanRight Level",
+        "American Amicable::Senior Choice Immediate",
+        "Transamerica::Immediate Solution",
+        "Transamerica::Easy Solution Graded"
+      ],
+      "expected_decision_category": "manual_review",
+      "expected_manual_review_required": true,
+      "required_warning_keywords": [
+        "No viable matching-goal products"
+      ],
+      "required_missing_question_keywords": [
+        "DUI",
+        "license",
+        "probation",
+        "driving record"
+      ]
+    },
+    {
+      "profile_name": "60-year-old with COPD and oxygen use wanting final expense",
+      "acceptable_primary_products": [
+        "Corebridge::GIWL",
+        "Ethos::TruStage Guaranteed"
+      ],
+      "unacceptable_primary_products": [],
+      "expected_decision_category": "guaranteed_issue_fallback",
+      "expected_manual_review_required": false,
+      "required_warning_keywords": [
+        ""
+      ],
+      "required_missing_question_keywords": [
+        "oxygen",
+        "breathing"
+      ]
+    },
+    {
+      "profile_name": "50-year-old healthy high-income client wanting max-funded IUL",
+      "acceptable_primary_products": [
+        "Corebridge::QoL Max Accumulator+",
+        "National Life Group::FlexLife IUL"
+      ],
+      "unacceptable_primary_products": [
+        "F&G::Pathsetter IUL"
+      ],
+      "expected_decision_category": "clean_match",
+      "expected_manual_review_required": false,
+      "required_warning_keywords": [
+        ""
+      ],
+      "required_missing_question_keywords": [
+        "hospitalizations"
+      ]
+    },
+    {
+      "profile_name": "66-year-old active cancer wanting final expense",
+      "acceptable_primary_products": [
+        "Corebridge::GIWL",
+        "Ethos::TruStage Guaranteed"
+      ],
+      "unacceptable_primary_products": [
+        "Mutual of Omaha::Living Promise Level",
+        "Foresters Financial::PlanRight Level"
+      ],
+      "expected_decision_category": "guaranteed_issue_fallback",
+      "expected_manual_review_required": false,
+      "required_warning_keywords": [
+        ""
+      ],
+      "required_missing_question_keywords": [
+        "treatment",
+        "cancer"
+      ]
+    },
+    {
+      "profile_name": "68-year-old dialysis patient wanting final expense",
+      "acceptable_primary_products": [
+        "Corebridge::GIWL",
+        "Ethos::TruStage Guaranteed"
+      ],
+      "unacceptable_primary_products": [],
+      "expected_decision_category": "guaranteed_issue_fallback",
+      "expected_manual_review_required": false,
+      "required_warning_keywords": [
+        ""
+      ],
+      "required_missing_question_keywords": [
+        "dialysis",
+        "transplant"
+      ]
+    },
+    {
+      "profile_name": "69-year-old stroke 4 years ago wanting final expense",
+      "acceptable_primary_products": [
+        "Mutual of Omaha::Living Promise Graded",
+        "Foresters Financial::PlanRight Graded"
+      ],
+      "unacceptable_primary_products": [
+        "Corebridge::GIWL"
+      ],
+      "expected_decision_category": "clean_match",
+      "expected_manual_review_required": false,
+      "required_warning_keywords": [
+        ""
+      ],
+      "required_missing_question_keywords": [
+        "stroke",
+        "residual"
+      ]
+    },
+    {
+      "profile_name": "64-year-old recent stroke wanting final expense",
+      "acceptable_primary_products": [
+        "Mutual of Omaha::Living Promise Graded",
+        "Foresters Financial::PlanRight Graded"
+      ],
+      "unacceptable_primary_products": [],
+      "expected_decision_category": "clean_match",
+      "expected_manual_review_required": false,
+      "required_warning_keywords": [
+        ""
+      ],
+      "required_missing_question_keywords": [
+        "stroke",
+        "recurrent"
+      ]
+    },
+    {
+      "profile_name": "68-year-old COPD without oxygen wanting final expense",
+      "acceptable_primary_products": [
+        "Mutual of Omaha::Living Promise Level",
+        "Foresters Financial::PlanRight Level"
+      ],
+      "unacceptable_primary_products": [],
+      "expected_decision_category": "needs_more_info",
+      "expected_manual_review_required": false,
+      "required_warning_keywords": [
+        ""
+      ],
+      "required_missing_question_keywords": [
+        "oxygen",
+        "breathing"
+      ]
+    },
+    {
+      "profile_name": "42-year-old Type 1 diabetic wanting IUL",
+      "acceptable_primary_products": [
+        "F&G::Pathsetter IUL"
+      ],
+      "unacceptable_primary_products": [],
+      "expected_decision_category": "impaired_risk_match",
+      "expected_manual_review_required": false,
+      "required_warning_keywords": [
+        ""
+      ],
+      "required_missing_question_keywords": [
+        "A1C",
+        "complications"
+      ]
+    },
+    {
+      "profile_name": "47-year-old Hepatitis C wanting IUL",
+      "acceptable_primary_products": [
+        "F&G::Pathsetter IUL"
+      ],
+      "unacceptable_primary_products": [],
+      "expected_decision_category": "impaired_risk_match",
+      "expected_manual_review_required": false,
+      "required_warning_keywords": [
+        ""
+      ],
+      "required_missing_question_keywords": [
+        "treatment",
+        "liver"
+      ]
+    },
+    {
+      "profile_name": "55-year-old bipolar disorder wanting IUL",
+      "acceptable_primary_products": [
+        "F&G::Pathsetter IUL"
+      ],
+      "unacceptable_primary_products": [],
+      "expected_decision_category": "impaired_risk_match",
+      "expected_manual_review_required": false,
+      "required_warning_keywords": [
+        ""
+      ],
+      "required_missing_question_keywords": [
+        "Hospitalizations",
+        "Medication"
+      ]
+    },
+    {
+      "profile_name": "48-year-old high BMI wanting IUL",
+      "acceptable_primary_products": [
+        "F&G::Pathsetter IUL"
+      ],
+      "unacceptable_primary_products": [],
+      "expected_decision_category": "impaired_risk_match",
+      "expected_manual_review_required": false,
+      "required_warning_keywords": [
+        ""
+      ],
+      "required_missing_question_keywords": [
+        "BMI",
+        "GLP-1"
+      ]
+    },
+    {
+      "profile_name": "46-year-old marijuana user wanting term",
+      "acceptable_primary_products": [
+        "needs_more_info::manual_review"
+      ],
+      "unacceptable_primary_products": [
+        "Corebridge::GIWL",
+        "Ethos::TruStage Guaranteed"
+      ],
+      "expected_decision_category": "manual_review",
+      "expected_manual_review_required": true,
+      "required_warning_keywords": [
+        "No viable matching-goal"
+      ],
+      "required_missing_question_keywords": [
+        "Frequency",
+        "edible"
+      ]
+    },
+    {
+      "profile_name": "44-year-old nicotine vaping wanting term",
+      "acceptable_primary_products": [
+        "needs_more_info::manual_review"
+      ],
+      "unacceptable_primary_products": [
+        "Corebridge::GIWL",
+        "Ethos::TruStage Guaranteed"
+      ],
+      "expected_decision_category": "manual_review",
+      "expected_manual_review_required": true,
+      "required_warning_keywords": [
+        "No viable matching-goal"
+      ],
+      "required_missing_question_keywords": [
+        "vaping",
+        "Nicotine"
+      ]
+    },
+    {
+      "profile_name": "82-year-old healthy senior wanting final expense",
+      "acceptable_primary_products": [
+        "Mutual of Omaha::Living Promise Level",
+        "Foresters Financial::PlanRight Level"
+      ],
+      "unacceptable_primary_products": [],
+      "expected_decision_category": "clean_match",
+      "expected_manual_review_required": false,
+      "required_warning_keywords": [
+        ""
+      ],
+      "required_missing_question_keywords": [
+        "hospitalizations"
+      ]
+    },
+    {
+      "profile_name": "90-year-old wanting final expense",
+      "acceptable_primary_products": [
+        "needs_more_info::manual_review"
+      ],
+      "unacceptable_primary_products": [
+        "Mutual of Omaha::Living Promise Level",
+        "Corebridge::GIWL"
+      ],
+      "expected_decision_category": "manual_review",
+      "expected_manual_review_required": true,
+      "required_warning_keywords": [
+        "No viable matching-goal"
+      ],
+      "required_missing_question_keywords": [
+        "hospitalizations"
+      ]
+    },
+    {
+      "profile_name": "50-year-old wanting very high IUL coverage",
+      "acceptable_primary_products": [
+        "Corebridge::QoL Max Accumulator+",
+        "National Life Group::FlexLife IUL"
+      ],
+      "unacceptable_primary_products": [],
+      "expected_decision_category": "clean_match",
+      "expected_manual_review_required": false,
+      "required_warning_keywords": [
+        "Coverage target outside"
+      ],
+      "required_missing_question_keywords": [
+        "hospitalizations"
+      ]
+    },
+    {
+      "profile_name": "53-year-old unclear diabetes details wanting IUL",
+      "acceptable_primary_products": [
+        "F&G::Pathsetter IUL",
+        "Corebridge::QoL Max Accumulator+"
+      ],
+      "unacceptable_primary_products": [],
+      "expected_decision_category": "clean_match",
+      "expected_manual_review_required": false,
+      "required_warning_keywords": [
+        ""
+      ],
+      "required_missing_question_keywords": [
+        "hospitalizations"
+      ]
+    }
+  ]
+}
